@@ -4,17 +4,101 @@
              x:Class="TumeKaust.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                Source="meri1.png"
-                HeightRequest="185"
-                Aspect="AspectFit" />
+        <Grid Padding="20" RowSpacing="20">
 
-            <Label
-                Text="Hello, World!" />
-            
-        </VerticalStackLayout>
+            <!-- Defineerime 4 põhijada -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!-- Ülemine osa: pilt + otsing -->
+                <RowDefinition Height="Auto" />
+                <!-- Keskmine 2x3 Grid -->
+                <RowDefinition Height="Auto"/>
+                <!--Alumine pealkiri-->
+                <RowDefinition Height="Auto" />
+                <!-- Alumine 3 Grid -->
+            </Grid.RowDefinitions>
+
+            <!-- 1️⃣ Ülemine osa: pilt + otsing -->
+            <VerticalStackLayout Grid.Row="0" Spacing="10">
+                <Image Source="meri1.png" Aspect="AspectFill" HeightRequest="200"
+                       x:Name="logoimage" Opacity="0"/>
+                <Label Text="Tere Tulemast Tumedasse Kausta!" HorizontalOptions="Center" FontSize="40"/>
+                <Label Text="Kaust, kus ise olla ei tahaks" HorizontalOptions="Center" FontSize="20"/>
+                <SearchBar Placeholder="Otsi midagi..." />
+            </VerticalStackLayout>
+
+            <!-- 2️⃣ Keskmine Grid 2x3 -->
+            <Grid Grid.Row="1" ColumnSpacing="10" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Näidis elemendid -->
+                <BoxView Color="Red" Grid.Row="0" Grid.Column="0"/>
+                <BoxView Color="Blue" Grid.Row="0" Grid.Column="1"/>
+                <BoxView Color="Green" Grid.Row="0" Grid.Column="2"/>
+                <BoxView Color="Yellow" Grid.Row="1" Grid.Column="0"/>
+                <BoxView Color="Orange" Grid.Row="1" Grid.Column="1"/>
+                <BoxView Color="Purple" Grid.Row="1" Grid.Column="2"/>
+            </Grid>
+
+            <Grid Grid.Row="2" ColumnSpacing="10" RowSpacing="10" HeightRequest="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Värskeimad Patustajad" 
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="20"/>
+            </Grid>
+
+
+            <!-- 3️⃣ Alumine Grid 1x3 -->
+            <Grid Grid.Row="3" ColumnSpacing="10" RowSpacing="10" HeightRequest="100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <!-- Näidis elemendid -->
+                <BoxView Color="Gray" Grid.Column="0"/>
+                <BoxView Color="LightBlue" Grid.Column="1"/>
+                <BoxView Color="LightGreen" Grid.Column="2"/>
+
+
+            </Grid>
+
+        </Grid>
     </ScrollView>
 </ContentPage>
+
+
+
+<!--<ContentPage.Background>
+    <SolidColorBrush Color="{StaticResource Background}"/>
+</ContentPage.Background>
+
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+        <Image
+            x:Name="logoimage"
+            Source="meri1.png"
+            HeightRequest="185"
+            Aspect="AspectFit" 
+            HorizontalOptions="Start"
+            Opacity="0"/>
+        <Label
+            Text="Tere tulemast Tumedasse kausta!" />
+        
+    </VerticalStackLayout>-->
+
