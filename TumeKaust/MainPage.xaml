@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:TumeKaust.Models"
              x:Class="TumeKaust.MainPage">
 
     <ScrollView>
@@ -40,12 +41,41 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Näidis elemendid -->
-                <BoxView Color="Red" Grid.Row="0" Grid.Column="0"/>
-                <BoxView Color="Blue" Grid.Row="0" Grid.Column="1"/>
-                <BoxView Color="Green" Grid.Row="0" Grid.Column="2"/>
-                <BoxView Color="Yellow" Grid.Row="1" Grid.Column="0"/>
-                <BoxView Color="Orange" Grid.Row="1" Grid.Column="1"/>
-                <BoxView Color="Purple" Grid.Row="1" Grid.Column="2"/>
+                <ContentPage>
+                    <CollectionView x:Name="CategoryCollection"
+                        SelectionMode="Single"
+                        SelectionChanged="OnCategorySelected">
+
+                        <CollectionView.ItemsLayout>
+                            <!-- 2 veergu ja automaatsed read -->
+                            <GridItemsLayout Orientation="Vertical"
+                                 Span="2"
+                                 VerticalItemSpacing="10"
+                                 HorizontalItemSpacing="10"/>
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate x:DataType="models:MainPageCategoryGrid">
+                                <Frame CornerRadius="15"
+                           HasShadow="True"
+                           Padding="10"
+                           BackgroundColor="#222"
+                           Margin="5">
+                                    <VerticalStackLayout HorizontalOptions="Center">
+                                        <Image Source="{Binding Image}"
+                                   WidthRequest="100"
+                                   HeightRequest="100"
+                                   Aspect="AspectFit"/>
+                                        <Label Text="{Binding Name}"
+                                   TextColor="White"
+                                   FontSize="16"
+                                   HorizontalOptions="Center"/>
+                                    </VerticalStackLayout>
+                                </Frame>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+                </ContentPage>
             </Grid>
 
             <Grid Grid.Row="2" ColumnSpacing="10" RowSpacing="10" HeightRequest="50">
@@ -81,24 +111,4 @@
 </ContentPage>
 
 
-
-<!--<ContentPage.Background>
-    <SolidColorBrush Color="{StaticResource Background}"/>
-</ContentPage.Background>
-
-
-    <VerticalStackLayout
-        Padding="30,0"
-        Spacing="25">
-        <Image
-            x:Name="logoimage"
-            Source="meri1.png"
-            HeightRequest="185"
-            Aspect="AspectFit" 
-            HorizontalOptions="Start"
-            Opacity="0"/>
-        <Label
-            Text="Tere tulemast Tumedasse kausta!" />
-        
-    </VerticalStackLayout>-->
 
