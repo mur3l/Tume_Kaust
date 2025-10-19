@@ -4,17 +4,44 @@
              x:Class="TumeKaust.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <!-- Ülemine pilt -->
             <Image
                 Source="meri1.png"
                 HeightRequest="185"
                 Aspect="AspectFit" />
 
-            <Label
-                Text="Hello, World!" />
-            
+            <Label Text="Hello, World!" FontSize="18" HorizontalOptions="Center" />
+
+            <!-- Nupp detailivaate avamiseks -->
+            <Button
+                Text="Ava Lennart Meri profiil"
+                Style="{StaticResource ButtonStyle}"
+                Clicked="OnOpenDetailsClicked"
+                HorizontalOptions="Center" />
+
+            <!-- Inimeste loend -->
+            <CollectionView x:Name="PeopleList"
+                            SelectionMode="Single"
+                            SelectionChanged="OnPersonSelected"
+                            Margin="0,20,0,0">
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="{StaticResource Border}" Padding="10" Margin="5">
+                            <HorizontalStackLayout Spacing="10">
+                                <Image Source="{Binding HeroImage}" WidthRequest="60" HeightRequest="60" Aspect="AspectFill" />
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}" TextColor="{StaticResource Text}" FontAttributes="Bold" />
+                                    <Label Text="{Binding Subtitle}" TextColor="Gray" FontSize="12" />
+                                </VerticalStackLayout>
+                            </HorizontalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
