@@ -148,29 +148,31 @@ namespace TumeKaust.Services
 
                 new Person
                 {
-                    Name = "Ott Tänak",
-                    Subtitle = "Rallisõitja",
-                    HeroImage = "ott.webp",
-                    Description = "Ott Tänak (sündinud 15. oktoobril 1987 Kärla vallas Saaremaal) on Eesti " +
-                    "rallisõitja. Ta on mitmekordne Eesti meister autorallis ning 2019. aasta autoralli" +
-                    "maailmameister.",
-                    News = new() { "Uudis 1: https://sport.err.ee/952895/video-punktikatsel-esikoha-kaotanud-tanak-oli-finisis-aarmiselt-loodud",
-                                   "Uudis 2: https://ralli.ee/lobus-video-ott-tanak-pani-tsiili-rallil-kohaliku-staari-karjuma/" ,
-                                   "Uudis 3: https://kroonika.delfi.ee/artikkel/120304765/vestlusohtu-draama-kogub-uusi-tuure-kristina-partelpoeg-katrin-lustist-see-tuleb-tema-mingist-v-uvihast-lust-see-on-kiusamine", }
+                    Name = "Jüri Ratas",
+                    Subtitle = "Poliitik",
+                    HeroImage = "Ratas.webp",
+                    Description = "Jüri Ratas (sündinud 2. juulil 1978 Tallinnas) on Eesti poliitik. Ta on olnud 2021–2023 Riigikogu esimees ja 2016–2021 Eesti Vabariigi peaminister. " +
+                    "2024. aastast on ta Euroopa Parlamendi liige. Kuuludes aastatel 2000–2024[1] Eesti Keskerakonda,[2] oli ta 2005. aasta novembrist kuni 5. aprillini 2007 Tallinna linnapea " +
+                    "ja 2. aprillist 2007 kuni 23. novembrini 2016 Riigikogu aseesimees.",
+                    News = new() { "Uudis 1: https://ekspress.delfi.ee/artikkel/92251051/juri-ratas-paastis-tagasi-astudes-oma-poliitikunahka",
+                                   "Uudis 2: https://online.le.ee/2017/12/14/skandaal-linnamae-peekoni-umber-juri-ratas-ei-otsi-kadri-simsonile-asendajat/" ,
+                                   "Uudis 3: https://uueduudised.ee/postimees-jarjekordne-skandaal-ratase-valitsuses-ei-jarjekordne-skandaal-ajakirjanduses/", }
 
                 },
 
                 new Person
                 {
-                    Name = "Ott Tänak",
-                    Subtitle = "Rallisõitja",
-                    HeroImage = "ott.webp",
-                    Description = "Ott Tänak (sündinud 15. oktoobril 1987 Kärla vallas Saaremaal) on Eesti " +
-                    "rallisõitja. Ta on mitmekordne Eesti meister autorallis ning 2019. aasta autoralli" +
-                    "maailmameister.",
-                    News = new() { "Uudis 1: https://sport.err.ee/952895/video-punktikatsel-esikoha-kaotanud-tanak-oli-finisis-aarmiselt-loodud",
-                                   "Uudis 2: https://ralli.ee/lobus-video-ott-tanak-pani-tsiili-rallil-kohaliku-staari-karjuma/" ,
-                                   "Uudis 3: https://kroonika.delfi.ee/artikkel/120304765/vestlusohtu-draama-kogub-uusi-tuure-kristina-partelpoeg-katrin-lustist-see-tuleb-tema-mingist-v-uvihast-lust-see-on-kiusamine", }
+                    Name = "Taavi Rõivas",
+                    Subtitle = "Poliitik",
+                    HeroImage = "Taavi.jpg",
+                    Description = "Taavi Rõivas (sündinud 26. septembril 1979) on Eesti poliitik, Eesti Reformierakonna esimees (2014–2017) ja " +
+                    "Eesti peaminister (2014–2016).\r\n\r\nAastatel 2012–2014 oli Rõivas Eesti sotsiaalminister. 14. märtsil 2014 tegi president Ilves Taavi Rõivale ülesandeks " +
+                    "moodustada valitsus ja sama aasta 26. märtsil kinnitas president Rõiva Eesti peaministriks. 7. novembril 2016 tegid koalitsioonipartnerid IRL " +
+                    "ja Sotsiaaldemokraatlik Erakond Rõivale ettepaneku tagasi astuda.[1] 9. novembril 2016 tegi Riigikogu Taavi Rõivale umbusaldusavalduse " +
+                    "(umbusaldamise poolt hääletas 63 Riigikogu liiget, vaja oli 51 häält).",
+                    News = new() { "Uudis 1: https://uueduudised.ee/eesti-endine-reformierakondlasest-peaminister-ja-tema-piinlikud-skandaalid/",
+                                   "Uudis 2: https://www.ohtuleht.ee/1015050/kulmkapp-murtud-ninaluu-ja-oravad-amaris-taavi-roivase-suuremad-ja-vaiksemad-skandaalid-poliitikas" ,
+                                   "Uudis 3: https://elu24.postimees.ee/7860541/ekspeaminister-taavi-roivas-ja-bsh-vupsasid-koos-wc-kabiini-luisa-jai-kurva-naoga-korvalt-vaatama", }
 
                 },
 
@@ -178,15 +180,17 @@ namespace TumeKaust.Services
 
                 new Person
                 {
-                    Name = "Ott Tänak",
-                    Subtitle = "Rallisõitja",
+                    Name = "Kaja Kallas",
+                    Subtitle = "Euroopa Liidu välisasjade ja julgeolekupoliitika kõrge esindaja\r\n",
                     HeroImage = "ott.webp",
-                    Description = "Ott Tänak (sündinud 15. oktoobril 1987 Kärla vallas Saaremaal) on Eesti " +
-                    "rallisõitja. Ta on mitmekordne Eesti meister autorallis ning 2019. aasta autoralli" +
-                    "maailmameister.",
-                    News = new() { "Uudis 1: https://sport.err.ee/952895/video-punktikatsel-esikoha-kaotanud-tanak-oli-finisis-aarmiselt-loodud",
-                                   "Uudis 2: https://ralli.ee/lobus-video-ott-tanak-pani-tsiili-rallil-kohaliku-staari-karjuma/" ,
-                                   "Uudis 3: https://kroonika.delfi.ee/artikkel/120304765/vestlusohtu-draama-kogub-uusi-tuure-kristina-partelpoeg-katrin-lustist-see-tuleb-tema-mingist-v-uvihast-lust-see-on-kiusamine", }
+                    Description = "Kaja Kallas (aastatel 2002–2006 Kaja Leiger; sündinud 18. juunil 1977 Tallinnas) " +
+                    "on Eesti poliitik ja jurist, kes oli aastatel 2021–2024 Eesti peaminister ja 2018–2024 " +
+                    "Eesti Reformierakonna esimees. Alates 1. detsembrist 2024 on ta Euroopa Liidu välisasjade " +
+                    "ja julgeolekupoliitika kõrge esindaja ja Euroopa Komisjoni asepresident. " +
+                    "Kallas on Eesti esimene naispeaminister.",
+                    News = new() { "Uudis 1: https://minuaeg.com/skandaal-kaja-kallase-ja-ametnike-nimed-ilmusid-venemaa-tagaotsitavate-nimekirja/",
+                                   "Uudis 2: https://www.delfi.ee/artikkel/120307812/ulevaade-kaja-kallas-on-hoolimata-skandaalidest-ja-ulatuslikest-kriisidest-jaanud-silma-tugeva-valispoliitilise-kailakujuna" ,
+                                   "Uudis 3: https://objektiiv.ee/jaak-madison-kaja-kallas-on-valelik-silmakirjalik-ja-kahepalgeline/", }
 
                 },
 

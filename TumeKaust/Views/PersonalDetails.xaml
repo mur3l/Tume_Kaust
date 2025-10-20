@@ -35,33 +35,33 @@
                        TextColor="{StaticResource Text}"/>
             </Frame>
 
-            <ScrollView Orientation="Horizontal" HeightRequest="120">
-                <HorizontalStackLayout Spacing="10">
-                    <CollectionView ItemsSource="{Binding News}"
-                                    ItemsLayout="HorizontalList">
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate>
-                                <Frame WidthRequest="120"
-                                       HeightRequest="100"
-                                       CornerRadius="10"
-                                       BorderColor="{StaticResource Border}" >
-                                    <Label Text=""
-                                           VerticalOptions="Center"
-                                           HorizontalOptions="Center"
-                                           FontSize="13"
-                                           TextColor="{StaticResource Text}" />
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                    </CollectionView>
-                </HorizontalStackLayout>
-            </ScrollView>
+            <CollectionView ItemsSource="{Binding News}"
+                ItemsLayout="VerticalList"
+                SelectionMode="Single"
+                HeightRequest="300">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame WidthRequest="120"
+                               HeightRequest="100"
+                               CornerRadius="10"
+                               BorderColor="{StaticResource Border}">
+                            <Label Text="{Binding Title}"  
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center"
+                                   FontSize="13"
+                                   TextColor="{StaticResource Text}" />
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
 
             <!-- Tagasi nupp -->
-            <Button Text="Back"
-                    Command="{Binding GoBackCommand}"
+            <Button Text="Tagasi nupp"
+                    Command="{Binding BackCommand}"
                     HorizontalOptions="End"
-                    WidthRequest="100"/>
+                    WidthRequest="100"
+                    Clicked="OnBackButtonClicked"/>
 
             <!-- Footer -->
             <Label Text="Privacy"
