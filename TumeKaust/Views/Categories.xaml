@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TumeKaust.Views.Categories"
-             Title="Kategooriad">
+             Title="Kategooriad"
+             BackgroundColor="{StaticResource Background}">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
@@ -18,6 +19,7 @@
             <Label 
                 Text="Patused kategooriad"
                 FontSize="24"
+                TextColor="{StaticResource Text}"
                 FontAttributes="Bold"
                 HorizontalOptions="Center" />
                 
