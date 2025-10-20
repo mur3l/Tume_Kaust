@@ -6,6 +6,7 @@ namespace TumeKaust.Services
     {
         private static List<Person> people = new()
         {
+            // sportlased, presidendid, suunamudijad, poliitikud 
                 new Person
                 {
                     Name = "Lennart Meri",
@@ -135,14 +136,14 @@ namespace TumeKaust.Services
 
                 new Person
                 {
-                    Name = "Kristina Pärtelpoeg",
-                    Subtitle = "Blogija",
+                    Name = "Andrus Värnik",
+                    Subtitle = "Odaviskaja",
                     HeroImage = "kristina.jpg",
-                    Description = "Brigitte Susanne Hunt on õppinud Audentese Erakoolis ja lõpetanud 2014. aastal Tallinna 21. Kooli." +
-                    "2017. aastal lõpetas Tartu Ülikooli ajakirjanduse ja kommunikatsiooni erialal",
-                    News = new() { "Uudis 1: https://kroonika.delfi.ee/artikkel/120329733/mida-temaga-siis-tehti-kristina-partelpoeg-paljastas-viimase-iluoperatsiooni-tagamaad",
+                    Description = "Andrus Värnik (sündinud 27. septembril 1977 Antslas) on endine Eesti kergejõustiklane (odaviskaja), kes 2005. aastal tuli odaviskes maailmameistriks." +
+                    "\r\n\r\nIsiklik rekord: 87.83 (19. august 2003 Valga, kuni 2018. aastani Eesti rekord)",
+                    News = new() { "Uudis 1: https://www.delfi.ee/artikkel/70183955/delfi-fotod-ja-video-tingimisi-vangi-moistetud-andrus-varnik-tuli-napsisena-kohtusaali",
                                    "Uudis 2: https://www.ohtuleht.ee/melu/957105/jalle-draama-kristina-partelpoeg-suudistab-blogiauhindade-jagamise-korraldusmeeskonda-enese-alandamises" ,
-                                   "Uudis 3: https://kroonika.delfi.ee/artikkel/120304765/vestlusohtu-draama-kogub-uusi-tuure-kristina-partelpoeg-katrin-lustist-see-tuleb-tema-mingist-v-uvihast-lust-see-on-kiusamine", }
+                                   "Uudis 3: https://www.err.ee/525477/kohus-pikendas-varniku-katseaega-ja-kohustas-minema-alkoholismiravilee", }
 
                 },
 
@@ -196,7 +197,6 @@ namespace TumeKaust.Services
 
 
         };
-        // sportlased, presidendi, suunamudijad, poliitikud 
         public static List<Person> GetAllPeople() => people;
 
         public static Person GetPersonByName(string name)
