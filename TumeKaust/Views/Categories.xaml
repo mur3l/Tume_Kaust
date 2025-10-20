@@ -11,6 +11,10 @@
         
         <!-- Content Area -->
         <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="20">
+            <Image
+                Source="meri1.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
             <Label 
                 Text="Patused kategooriad"
                 FontSize="24"
