@@ -28,6 +28,13 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="PersonsBtn"
+                Text="Isikud"
+                SemanticProperties.Hint="Navigeeri isikute lehele"
+                Clicked="OnPersonsClicked"
+                HorizontalOptions="Fill" />
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

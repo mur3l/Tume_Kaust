@@ -68,6 +68,7 @@
 
 	<ItemGroup>
 	  <Folder Include="Controllers\" />
+	  <Folder Include="Resources\Images\Persons\" />
 	</ItemGroup>
 
 	<ItemGroup>

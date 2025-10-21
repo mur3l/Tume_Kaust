@@ -1,4 +1,6 @@
-﻿namespace TumeKaust
+﻿using TumeKaust.Views;
+
+namespace TumeKaust
 {
     public partial class MainPage : ContentPage
     {
@@ -7,6 +9,11 @@
         public MainPage()
         {
             InitializeComponent();
+        }
+
+        private async void OnPersonsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Persons());
         }
 
         private void OnCounterClicked(object? sender, EventArgs e)
