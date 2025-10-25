@@ -16,7 +16,10 @@ namespace TumeKaust.Services
                     "Koos perekonnaga lahkus ta varakult Eestist ning pidi" +
                     "üheksa korda kooli ning neli korda keelt vahetama. " +
                     "Kõige soojemalt meenutas ta oma õpinguid Lycée Janson de Sailly's Pariisis..",
-                    News = new() { "Uudis 1: https://www.ohtuleht.ee/melu/1088458/suur-draama-ajajoon-brigitte-susanne-hunt-versus-koik-teised-vaata-kuidas-rullus-avalikkuse-silme-ees-lahti-selle-suve-skandaalseim-tuli",
+                    News = new() { "Uudis 1: Lennart Meri vanemad olid Eesti diplomaat, hilisem William Shakespeare'i tõlkija Georg Meri ning Alice-Brigitta Engmann, " +
+                                    "kellel olid eestirootsi juured.\r\n\r\nIsa diplomaadiameti tõttu käis Lennart Meri mitmes Saksamaa ja Prantsusmaa koolis ja omandas hea keelteoskuse. " +
+                                    "Ta valdas saksa, prantsuse, inglise, soome ja vene keelt. Pärast Eesti okupeerimist küüditati Georg Meri perekond 1941. aastal Kirovi oblastisse. " +
+                                    "Sealt naasid nad 1945. aastal. Lennart oli vahepeal õppinud mitmes venekeelses koolis. Eestis lõpetas ta Tallinna 10. Keskkooli ja astus Tartu Riiklikku Ülikooli.",
                                    "Uudis 2: https://kroonika.delfi.ee/artikkel/120407077/video-lase-tulla-brigitte-pogenes-kohtuistungi-jarel-ajakirjanike-eest-kuid-saatis-sonumi-mallukale" ,
                                    "Uudis 3: https://elu24.postimees.ee/8334256/brigitte-susanne-hunt-vabandab-oma-kaitumise-parast-kohtusaalis-ilmselgelt-olin-uliemotsionaalne-ja-ebaprofessionaalne", }
 

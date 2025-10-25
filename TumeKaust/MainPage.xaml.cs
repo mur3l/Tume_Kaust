@@ -32,6 +32,5 @@ namespace TumeKaust
             // Tühjenda valik pärast klikki
             ((CollectionView)sender).SelectedItem = null;
         }
-
     }
 }

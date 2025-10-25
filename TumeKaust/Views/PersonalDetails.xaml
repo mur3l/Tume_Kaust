@@ -6,69 +6,98 @@
              BackgroundColor="{StaticResource Background}">
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            <HorizontalStackLayout Spacing="10" VerticalOptions="Start">
 
+            <!-- Logo ja nimi -->
+            <HorizontalStackLayout Spacing="10" VerticalOptions="Start" HorizontalOptions="Start">
                 <Image Source="meri1.png"
-                           HeightRequest="50"
-                           WidthRequest="50" >
+                       HeightRequest="50"
+                       WidthRequest="50">
                     <Image.GestureRecognizers>
-                            <TapGestureRecognizer Tapped="OnLogoTapped"/>
-                        </Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLogoTapped"/>
+                    </Image.GestureRecognizers>
                 </Image>
-
-                    <Label Text="{Binding Name}" 
-                           FontSize="20"
-                           VerticalOptions="Center"
-                           TextColor="{StaticResource Text}"/>
-                <!--Grid.Column="1"-->
+                <Label Text="{Binding Name}" 
+                       FontSize="20"
+                       VerticalOptions="Center"
+                       TextColor="{StaticResource Text}" />
             </HorizontalStackLayout>
 
-            <Border StrokeShape="RoundRectangle 15">
-                <Image Source="{Binding HeroImage}" Aspect="AspectFill" HeightRequest="150" WidthRequest="150" />
-            </Border>
+            <!-- Pilt üleval -->
+            <Image Source="{Binding HeroImage}" 
+                   Aspect="AspectFill" 
+                   HeightRequest="200" 
+                   HorizontalOptions="Center"/>
 
-            <Frame Padding="10"
-                   BackgroundColor="{StaticResource Background}"
-                   CornerRadius="15">
+            <!-- Lühitutvustus -->
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Lühidalt, kes on?"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="{StaticResource Text}"
+                       HorizontalOptions="Start"/>
                 <Label Text="{Binding Description}"
-                       FontSize="25"
-                       TextColor="{StaticResource Text}"/>
-            </Frame>
+                       FontSize="14"
+                       TextColor="{StaticResource Text}"
+                       LineBreakMode="WordWrap"/>
+            </VerticalStackLayout>
+
+            <!-- Uudised -->
+            <Label Text="Uudised"
+                   FontSize="16"
+                   FontAttributes="Bold"
+                   TextColor="{StaticResource Text}"
+                   Margin="0,10,0,0"
+                   HorizontalTextAlignment="Center"/>
 
             <CollectionView ItemsSource="{Binding News}"
                 ItemsLayout="VerticalList"
                 SelectionMode="Single"
-                HeightRequest="300">
+                HeightRequest="200"
+                HorizontalOptions="Center">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame WidthRequest="120"
-                               HeightRequest="100"
+                               HeightRequest="80"
                                CornerRadius="10"
-                               BorderColor="{StaticResource Border}">
-                            <Label Text="{Binding Title}"  
+                               BorderColor="{StaticResource Border}"
+                               Padding="10"
+                               BackgroundColor="{StaticResource Background}"
+                               HorizontalOptions="Center">
+                            <Label Text="{Binding .}"  
                                    VerticalOptions="Center"
                                    HorizontalOptions="Center"
-                                   FontSize="13"
-                                   TextColor="{StaticResource Text}" />
+                                   FontSize="12"
+                                   TextColor="{StaticResource Text}"
+                                   LineBreakMode="TailTruncation"
+                                   MaxLines="2"
+                                   HorizontalTextAlignment="Center"/>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
 
+            <!-- Nupp ja Privacy sama ritta -->
+            <Grid ColumnDefinitions="*,*" Margin="0,20,0,0" HeightRequest="40">
+                <!-- Privacy -->
+                <Label Grid.Column="0"
+                       Text="Privacy"
+                       FontSize="12"
+                       TextColor="Gray"
+                       HorizontalOptions="Start"
+                       VerticalOptions="Center"/>
 
-            <!-- Tagasi nupp -->
-            <Button Text="Tagasi nupp"
-                    Command="{Binding BackCommand}"
-                    HorizontalOptions="End"
-                    WidthRequest="100"
-                    Clicked="OnBackButtonClicked"/>
-
-            <!-- Footer -->
-            <Label Text="Privacy"
-                   FontSize="12"
-                   TextColor="Gray"
-                   HorizontalOptions="Start"
-                   Margin="10,30,10,0"/>
+                <!-- Nupp -->
+                <Button Grid.Column="1"
+                        Text="Back"
+                        Style="{StaticResource ButtonStyle}"
+                        HorizontalOptions="End"
+                        VerticalOptions="Center"
+                        WidthRequest="80"
+                        HeightRequest="35"
+                        CornerRadius="8"
+                        FontSize="14"
+                        Clicked="OnBackButtonClicked"/>
+            </Grid>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
