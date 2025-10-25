@@ -13,15 +13,20 @@ namespace TumeKaust.Services
                     Subtitle = "Vabariigi President\r\n06.10.1992-08.10.2001",
                     HeroImage = "meri1.png",
                     Description = "Lennart Meri sündis 29. märtsil 1929 Tallinnas Eesti diplomaadi ja hilisema Shakespeare'i tõlkija Georg Meri perekonnas. " +
-                    "Koos perekonnaga lahkus ta varakult Eestist ning pidi" +
-                    "üheksa korda kooli ning neli korda keelt vahetama. " +
-                    "Kõige soojemalt meenutas ta oma õpinguid Lycée Janson de Sailly's Pariisis..",
-                    News = new() { "Uudis 1: Lennart Meri vanemad olid Eesti diplomaat, hilisem William Shakespeare'i tõlkija Georg Meri ning Alice-Brigitta Engmann, " +
-                                    "kellel olid eestirootsi juured.\r\n\r\nIsa diplomaadiameti tõttu käis Lennart Meri mitmes Saksamaa ja Prantsusmaa koolis ja omandas hea keelteoskuse. " +
-                                    "Ta valdas saksa, prantsuse, inglise, soome ja vene keelt. Pärast Eesti okupeerimist küüditati Georg Meri perekond 1941. aastal Kirovi oblastisse. " +
-                                    "Sealt naasid nad 1945. aastal. Lennart oli vahepeal õppinud mitmes venekeelses koolis. Eestis lõpetas ta Tallinna 10. Keskkooli ja astus Tartu Riiklikku Ülikooli.",
-                                   "Uudis 2: https://kroonika.delfi.ee/artikkel/120407077/video-lase-tulla-brigitte-pogenes-kohtuistungi-jarel-ajakirjanike-eest-kuid-saatis-sonumi-mallukale" ,
-                                   "Uudis 3: https://elu24.postimees.ee/8334256/brigitte-susanne-hunt-vabandab-oma-kaitumise-parast-kohtusaalis-ilmselgelt-olin-uliemotsionaalne-ja-ebaprofessionaalne", }
+                    "Koos perekonnaga lahkus ta varakult Eestist ning pidi " +
+                    "üheksa korda kooli ning neli korda keelt vahetama. " ,
+                        News = new() {
+                            "Lennart Meri vanemad olid Eesti diplomaat, hilisem William Shakespeare'i tõlkija Georg Meri ning Alice-Brigitta Engmann, kellel olid eestirootsi juured." +
+                            "\r\n\r\nIsa diplomaadiameti tõttu käis Lennart Meri mitmes Saksamaa ja Prantsusmaa koolis ja omandas hea keelteoskuse. Ta valdas saksa, prantsuse, inglise," +
+                            " soome ja vene keelt. Pärast Eesti okupeerimist küüditati Georg Meri perekond 1941. aastal Kirovi oblastisse.",
+                            "Lennart Meri haridustee ja keelteoskus...",
+                            "Lennart Meri poliitiline karjäär..."
+                        },
+                        NewsLinks = new() { // lisan URL 
+                            "https://et.wikipedia.org/wiki/Lennart_Meri",
+                            "https://www.example.com/uudis2",
+                            "https://www.example.com/uudis3"
+                        }
 
                 },
 

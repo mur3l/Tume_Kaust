@@ -6,8 +6,7 @@
         public string Subtitle { get; set; }       
         public string HeroImage { get; set; }    
         public string Description { get; set; }   
-        public List<string> News { get; set; }     
-        public Color AccentColorStart { get; set; }
-        public Color AccentColorEnd { get; set; }
+        public List<string> News { get; set; }
+        public List<string> NewsLinks { get; set; }
     }
 }
