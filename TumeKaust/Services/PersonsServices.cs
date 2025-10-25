@@ -9,11 +9,11 @@ namespace TumeKaust.Services
 {
     public static class PersonsServices
     {
-        private static List<Persons> GetPersons()
+        private static List<Person> GetPersons()
         { 
-          return new List<Persons>
+          return new List<Person>
           {
-              new Persons
+              new Person
               { 
                 ImagePath = "Persons/Alaver.png",
                 Name = "Mati Alaver",
@@ -21,7 +21,7 @@ namespace TumeKaust.Services
                 Category = "Suusatamine"
               },
 
-              new Persons
+              new Person
               { 
                 ImagePath = "Persons/Veerpalu.png",
                 Name = "Andreas Veerpalu",
@@ -29,7 +29,7 @@ namespace TumeKaust.Services
                 Category = "Suustatamine"
               },
 
-              new Persons
+              new Person
               { 
                 ImagePath = "Persons/Nabi.png",
                 Name = "Heiki Nabi",
@@ -37,7 +37,7 @@ namespace TumeKaust.Services
                 Category = "Maadlus"
               },
 
-              new Persons
+              new Person
               { 
                 ImagePath = "Persons/Priinits.png",
                 Name = "Sten Priinits",
@@ -45,7 +45,7 @@ namespace TumeKaust.Services
                 Category = "Vehklemine"
               },
 
-              new Persons
+              new Person
               { 
                 ImagePath = "Persons/Värnik.png",
                 Name = "Andrus Värnik",

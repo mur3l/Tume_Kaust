@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TumeKaust.Models.Persons
 {
-    public class Persons
+    public class Person
     {
         public string? ImagePath { get; set; }
         public string? Name { get; set; }
