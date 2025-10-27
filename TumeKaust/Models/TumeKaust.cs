@@ -1,6 +1,6 @@
 ﻿namespace TumeKaust.Models
 {
-    internal class TumeKaust
+    public class TumeKaust
     {
     }
 }
