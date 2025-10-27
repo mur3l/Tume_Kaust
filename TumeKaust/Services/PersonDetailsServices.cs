@@ -20,12 +20,20 @@ namespace TumeKaust.Services
                     News = new() {
                             "Uudis 1: Hoolimata sellest, et Lennart Meri on surelik ja valelik nagu enamik inimesi, on ta suutnud jätta endast mulje kui kõiketeadvast diplomaatilisest paipoisist. Lennart Meri on vaja tagandada, sest ta on Eesti riigikaitse kõrgeima juhina vastutav kaitseväes toimuva eest. Riigimehelikult käituv president oleks otseselt vastutava kindral Kerdi lahkumisavalduse rahuldanud.",
                             "Uudis 2: Ammu on liikunud kuulujutud, et Lennart Meri oli abikaasana äkiline ja vägivaldne. Kolm aastat tagasi paluti neid kuulujutte ümber lükata Lennarti eksnaisel, Regina Merel. Tema seda teha ei soovinud, naine ütles, et las need kuulujutud levida edasi. " ,
+<<<<<<< Updated upstream
                             "Uudis 3: Kersti Kaljulaid rikub Eesti põhiseaduse mõtet - president ei ole peaministri ülemus ",
+=======
+                            "Uudis 3: Seega ei ole vähimatki kahtlust: president Meri teeb kõik selleks, et võim säiliks valitseva kolmikliidu käes ükskõik missuguse hinnaga. Ja tal on selleks väga isiklikku laadi põhjused.\r\n",
+>>>>>>> Stashed changes
                         },
                         NewsLinks = new() { // lisan URL 
                             "https://www.ohtuleht.ee/57717/valetav-meri-maarib-eesti-mainet",
                             "https://epl.delfi.ee/artikkel/68627041/lp-arhiivist-regina-meri-jah-ma-olin-meie-abielus-uksi",
+<<<<<<< Updated upstream
                             "https://www.example.com/uudis3"
+=======
+                            "https://vana.kesknadal.ee/web/html/uudised2770.html"
+>>>>>>> Stashed changes
                         }
 
                 },
@@ -93,8 +101,12 @@ namespace TumeKaust.Services
                     Subtitle = "Blogija",
                     HeroImage = "hunt.jpg",
                     DetailsKey = "Mallukas",
+<<<<<<< Updated upstream
                     Description = "Brigitte Susanne Hunt on õppinud Audentese Erakoolis ja lõpetanud 2014. aastal Tallinna 21. Kooli." +
                     "2017. aastal lõpetas Tartu Ülikooli ajakirjanduse ja kommunikatsiooni erialal",
+=======
+                    Description = "Mariann Treimann, enamikule tuntud kui Mallukas – Eesti loetuima blogi autor ning nüüd ka päris enda saate staar –, on oma elu, pere, tööde ja tegemistega seotud seiku blogiveergudel jaganud juba pikki aastaid. ",
+>>>>>>> Stashed changes
                     News = new() { "Uudis 1: Naljakas, kuidas mõned asjad kaugelt vaadates naljakad tunduvad. No näiteks loen iga päev Katerina blogi ja ta päris tihti räägib seal enda tinderikogemustest. Ja see on ausalt öeldes päris naljakas lugemine. Samas ma saan aru, et tal ilmselt pole väga naljakas, sest tegelikult ",
                                    "Uudis 2: Vägevat \"Salajuttude\" suvelaagrit promoti nii: \"Naudime head ilma, mõnusat talu, kaunist loodust ja kui see osa tehtud saab, siis istume maha, naudime head sööki ja jooki. Muidugi astuvad lavale Mallu ja Kristina, kes jagavad teile mahlakaid Salajutte, kõige kuumemat goss'i ja naljakaid seiku enda elust.\" " ,
                                    "Uudis 3: Suurt skandaali kommenteeris ka Hunt ise oma sotsiaalmeedias. „Kui mul on kunagi mees onju, praegu mul ei ole aega selle jaoks, sest mul on ülikool. Samas kui mingi väga hea miisu tuleb, siis leian aega. Aga kui mul on mees ja kui kellelgi on võimalik teda minu käest võtta, siis võtke. Ma tahan, et mu mees tahab ise olla mulle truu ja kui talle natuke meeldib keegi teine, siis ma ei võta seda isiklikult,“ jutustas Brigitte."
@@ -112,8 +124,12 @@ namespace TumeKaust.Services
                     Subtitle = "Blogija",
                     HeroImage = "kristina.jpg",
                     DetailsKey = "KrisinaPärtelpoeg",
+<<<<<<< Updated upstream
                     Description = "Brigitte Susanne Hunt on õppinud Audentese Erakoolis ja lõpetanud 2014. aastal Tallinna 21. Kooli." +
                     "2017. aastal lõpetas Tartu Ülikooli ajakirjanduse ja kommunikatsiooni erialal",
+=======
+                    Description = "Kristina Suuroja-Pärtelpoeg (sündinud 2. märtsil 1994) on eesti suunamudija ja saatejuht.Ta oli 2021. aasta augustist kuni 2022. aasta detsembrini raadio MyHits hommikuprogrammi saatejuht",
+>>>>>>> Stashed changes
                     News = new() { "Uudis 1: Tõsielusaate „Mida Mallukat! värskest osast selgub, et 30-aastane sisulooja käis kuu aega tagasi rasvaimus. Samal päeval sama tohtri noa all operatsioonil käinud Mallukas soovis aga oma niigi saledat pihta veelgi ilusamaks saada üleliigse naha eemaldusega. „Me oleme nüüd peenemad kui kunagi varem,“ teatas blogija kaamerate ees.",
                                    "Uudis 2: Seepeale kirjutas Pärtelpoeg ise korraldajatele, et nad tema blogi võistlusest eemaldaks. „Ütlesin, et ma ei taha, et mul on eelmise aastaga väike trauma. Ja siis ta ütles: „Nojah, sa ei saagi osaleda.“,“ ütleb Pärtelpoeg videos. „Ma reaalselt ei viitsi enam selliste inimestega suhelda, ma ei taha blogiauhindadega enam kunagi tegemist teha.“ " ,
                                    "Uudis 3: „Ta käitumine ei ole normaalne. Ja kui te näete kõiki neid pealkirju viimasel ajal – see tuleb tema mingist v**uvihast ja ma ei saa aru, mis ta probleem on,“ räägib raadiohääl ja suunamudija Kristina Pärtelpoeg Katrin Lustist Instagrami close friends’idele (lähedastele sõpradele) mõeldud videoklipikeses. „See on kiusamine!“ ütleb „Kuuuurija“ saatejuht Katrin Lust Kroonikale.\r\n\r\n„Eks ma siis uurin välja, keda ei saa usaldada,“ alustab Pärtelpoeg oma Instagrami close friends’idele mõeldud videoklipikeses, mis hakkas inimeste seas levima.",
@@ -149,6 +165,7 @@ namespace TumeKaust.Services
 
                 new Person
                 {
+<<<<<<< Updated upstream
                     Name = "Jüri Vips",
                     Subtitle = "Rallisõitja",
                     HeroImage = "Juri.jpg",
@@ -162,6 +179,21 @@ namespace TumeKaust.Services
                             "https://www.ohtuleht.ee/sport/1091341/juri-vips-labis-rassismiskandaali-jarel-kaks-kursust-tahtsin-aru-saada-mis-on-solvav-mis-mitte-",
                             "",
                             ""
+=======
+                    Name = "Mirkko Moisar",
+                    Subtitle = "Kikkpoksija",
+                    HeroImage = "Mirkko.png",
+                    DetailsKey = "MirkkoMoisar",
+                    Description = "Brigitte Susanne Hunt on õppinud Audentese Erakoolis ja lõpetanud 2014. aastal Tallinna 21. Kooli." +
+                    "2017. aastal lõpetas Tartu Ülikooli ajakirjanduse ja kommunikatsiooni erialal",
+                    News = new() { "Uudis 1: Tuntud kikkpoksija Mirkko Moisar sai esmaspäeval Harju maakohtus vägivallatsemise ja võõra dokumendi rikkumise eest rahalise karistuse.",
+                                   "Uudis 2: Mirkko Moisar jäi politseile vahele 26. juunil ja tema hingeõhus oli alkoholi 0,68 mg/l (1,56 promilli), vahendas Delfi. Moisar selgitas, et oli söögi kõrvale joonud ühe õlle. Oma tegu ta kahetses. ",
+                                   "Uudis 3:  Harju maakohtu Tallinna kohtumajas arutati nädal aega tagasi Mirkko Moisari kaebust PPA Põhja prefektuuri Lääne-Harju politseijaoskonna menetlustalituse väärteootsuse kohta, millega sooviti temalt juhtimisõigust pooleks aastaks ära võtta.",
+                     NewsLinks = new() {
+                            "https://sport.postimees.ee/6896494/eesti-tipp-poksija-sai-vagivallatsemise-eest-rahalise-karistuse",
+                            "https://www.ohtuleht.ee/1142132/purjuspai-autoroolis-kikkpoksija-mirkko-moisar-jai-viieks-kuuks-juhiloast-ilma",
+                            "https://sport.delfi.ee/artikkel/120412029/mirkko-moisar-voeti-vahi-alla-valjapressimises-kahtlustatuna"
+>>>>>>> Stashed changes
 
                 },
 
@@ -170,7 +202,11 @@ namespace TumeKaust.Services
                 {
                     Name = "Andrus Värnik",
                     Subtitle = "Odaviskaja",
+<<<<<<< Updated upstream
                     HeroImage = "kristina.jpg",
+=======
+                    HeroImage = "andrusvarnik.jpg",
+>>>>>>> Stashed changes
                     DetailsKey = "AndrusVärnik",
                     Description = "Andrus Värnik (sündinud 27. septembril 1977 Antslas) on endine Eesti kergejõustiklane (odaviskaja), kes 2005. aastal tuli odaviskes maailmameistriks." +
                     "\r\n\r\nIsiklik rekord: 87.83 (19. august 2003 Valga, kuni 2018. aastani Eesti rekord)",
@@ -243,7 +279,11 @@ namespace TumeKaust.Services
                                 "https://www.delfi.ee/artikkel/120307812/ulevaade-kaja-kallas-on-hoolimata-skandaalidest-ja-ulatuslikest-kriisidest-jaanud-silma-tugeva-valispoliitilise-kailakujuna",
                                 "https://objektiiv.ee/jaak-madison-kaja-kallas-on-valelik-silmakirjalik-ja-kahepalgeline/taavi rõiva "
                 }
+<<<<<<< Updated upstream
         }
+=======
+        };
+>>>>>>> Stashed changes
 
                          
 
