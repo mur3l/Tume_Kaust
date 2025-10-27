@@ -1,4 +1,6 @@
 ﻿using TumeKaust.Models;
+using TumeKaust.Services;
+using TumeKaust.Views;
 
 namespace TumeKaust
 {

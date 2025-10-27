@@ -17,73 +17,13 @@
         <Setter Property="FontSize" Value="32"/>
         <Setter Property="TextColor" Value="#ffd710"/>
     </Style>
-    
-    
+
+    <Style TargetType="Label" x:Key="NewsLinkStyle">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextColor" Value="Gray"/>
+        <Setter Property="HorizontalOptions" Value="Start"/>
+    </Style>
+
 </ResourceDictionary>
 
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
