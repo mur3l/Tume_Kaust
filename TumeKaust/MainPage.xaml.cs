@@ -45,7 +45,7 @@ namespace TumeKaust
 
         private async void OpenPersonalDetails(object sender, SelectionChangedEventArgs e)
         {
-            if (e.CurrentSelection.FirstOrDefault() is PersonalDetails selected)
+            if (e.CurrentSelection.FirstOrDefault() is PersonalDetailsGrid selected)
             {
                 await DisplayAlert("Valitud isik", selected.Name, "OK");
                 
