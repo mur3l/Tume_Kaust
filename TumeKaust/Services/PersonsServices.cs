@@ -15,42 +15,98 @@ namespace TumeKaust.Services
           {
               new Person
               { 
-                ImagePath = "Alaver.png",
-                Name = "Mati Alaver",
-                Description = "Endine suusatreener, mõisteti 2019 süüdi dopingu kallutamises (Seefeldi juhtum).",
-                Category = "Suusatamine"
+                ImagePath = "meri1.png",
+                Name = "Lennart Meri",
+                Description = "Eesti kirjanik, filmitegija, diplomaat ja poliitik, kes oli Eesti Vabariigi president aastatel 1992–2001.",
+                Category = "Presidendid"
               },
 
               new Person
               { 
-                ImagePath = "Veerpalu.png",
-                Name = "Andreas Veerpalu",
-                Description = "Seotud Seefeldi 2019 dopingujuhtumiga, määrati FISi keeld veredopingu eest.",
-                Category = "Suustatamine"
+                ImagePath = "kaljulaid.png",
+                Name = "Kersti Kaljulaid",
+                Description = "Eesti poliitik ja majandusteadlane, kes oli Eesti Vabariigi president aastatel 2016–2021.",
+                Category = "Presidendid"
               },
 
               new Person
               { 
-                ImagePath = "Nabi.png",
-                Name = "Heiki Nabi",
-                Description = "Kahekordne maailmameister, 2021 dopinguproov letrosooliga – 2-aastane keeld.",
-                Category = "Maadlus"
+                ImagePath = "ilves.png",
+                Name = "Toomas Hendrik Ilves",
+                Description = "Eesti poliitik ja diplomaat, kes oli president aastatel 2006–2016.",
+                Category = "Presidendid"
               },
 
               new Person
               { 
-                ImagePath = "Priinits.png",
-                Name = "Sten Priinits",
-                Description = "Vehkleja, 2024 sai EADSE-lt 18-kuulise keelu asukohaandmete rikkumise eest.",
-                Category = "Vehklemine"
+                ImagePath = "hunt.jpg",
+                Name = "Brigitte Susanna Hunt",
+                Description = "Eesti meediategelane, laulja ja saatejuht. Tuntud peamiselt oma tegevuse kaudu telesaadetes ja sotsiaalmeedias.",
+                Category = "Suunamudijad"
               },
 
               new Person
               { 
-                ImagePath = "Varnik.png",
+                ImagePath = "mallukas.png",
+                Name = "Mariann Treimann",
+                Description = "Eesti ettevõtja, moelooja ja sotsiaalmeediategelane.",
+                Category = "Suunamudijad"
+              },
+
+              new Person
+              { 
+                ImagePath = "",
+                Name = "Kristina Pärtelpoeg",
+                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Category = "Suunamudijad"
+              },
+
+              new Person
+              {
+                ImagePath = "",
+                Name = "Ott Tänak",
+                Description = "Eesti rallisõitja, 2019. aasta autoralli maailmameister (WRC). Esimene eestlane, kes on selle tiitli võitnud.",
+                Category = "Sportlased"
+              },
+
+              new Person
+              {
+                ImagePath = "",
+                Name = "Jüri Vips",
+                Description = "Eesti autosportlane, kes on võistelnud vormelisarjades, sealhulgas Formula 2-s ja Red Bulli noorteprogrammis.",
+                Category = "Sportlased"
+              },
+
+              new Person
+              {
+                ImagePath = "",
                 Name = "Andrus Värnik",
-                Description = "2005 MM-kuld odaviskes; 2014 süüdi kehalises väärkohtlemises ja saadeti ravile.",
-                Category = "Odaviskaja"
+                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Category = "Sportlased"
+              },
+
+              new Person
+              {
+                ImagePath = "",
+                Name = "Jüri Ratas",
+                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Category = "Poliitikud"
+              },
+
+              new Person
+              {
+                ImagePath = "",
+                Name = "Taavi Rõivas",
+                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Category = "Poliitikud"
+              },
+
+              new Person
+              {
+                ImagePath = "",
+                Name = "Kaja Kallas",
+                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Category = "Poliitikud"
               },
 
           };
