@@ -16,15 +16,15 @@ namespace TumeKaust.Models.ViewModels
         {
             Persons = new ObservableCollection<Person>
             {
-                new Person { Name = "Andrus Värnik", Description = "Eesti odaviskaja, kergejõustiku maailmameister.", ImagePath = "varnik.png" },
+                new Person { Name = "Lennart Meri", Description = "Eesti odaviskaja, kergejõustiku maailmameister.", ImagePath = "varnik.png" },
 
-                new Person { Name = "Mati Alaver", Description = "Eesti suusatreener, töötanud murdmaasuusatamise alal.", ImagePath = "alaver.png" },
+                new Person { Name = "Kersti Kaljurand", Description = "Eesti suusatreener, töötanud murdmaasuusatamise alal.", ImagePath = "alaver.png" },
 
-                new Person { Name = "Heiki Nabi", Description = "Eesti kreeka-rooma maadleja, maailmameister ja olümpiamedalist.", ImagePath = "nabi.png" },
+                new Person { Name = "Toomas Hendrik Ilves", Description = "Eesti kreeka-rooma maadleja, maailmameister ja olümpiamedalist.", ImagePath = "nabi.png" },
 
-                new Person { Name = "Sten Priinits", Description = "Eesti vehkleja, spetsialiseerunud epee'le.", ImagePath = "priinits.png" },
+                new Person { Name = "Birgitte Susanna Hunt", Description = "Eesti vehkleja, spetsialiseerunud epee'le.", ImagePath = "priinits.png" },
 
-                new Person { Name = "Mirrko Moisar", Description = "Eesti võitlussportlane, tegelenud taipoksi ja K-1'ga.", ImagePath = "moisar.png" },
+                new Person { Name = "Mariann Treimann tundud kui Mallukas", Description = "Eesti võitlussportlane, tegelenud taipoksi ja K-1'ga.", ImagePath = "moisar.png" },
             };
         }
     }
