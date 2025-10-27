@@ -55,7 +55,7 @@ namespace TumeKaust.Services
 
               new Person
               { 
-                ImagePath = "",
+                ImagePath = "partelpoeg.png",
                 Name = "Kristina Pärtelpoeg",
                 Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
                 Category = "Suunamudijad"
@@ -63,7 +63,7 @@ namespace TumeKaust.Services
 
               new Person
               {
-                ImagePath = "",
+                ImagePath = "tanak.png",
                 Name = "Ott Tänak",
                 Description = "Eesti rallisõitja, 2019. aasta autoralli maailmameister (WRC). Esimene eestlane, kes on selle tiitli võitnud.",
                 Category = "Sportlased"
@@ -71,7 +71,7 @@ namespace TumeKaust.Services
 
               new Person
               {
-                ImagePath = "",
+                ImagePath = "vips.png",
                 Name = "Jüri Vips",
                 Description = "Eesti autosportlane, kes on võistelnud vormelisarjades, sealhulgas Formula 2-s ja Red Bulli noorteprogrammis.",
                 Category = "Sportlased"
@@ -79,33 +79,33 @@ namespace TumeKaust.Services
 
               new Person
               {
-                ImagePath = "",
+                ImagePath = "varnik.png",
                 Name = "Andrus Värnik",
-                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Description = "Eesti endine kergejõustiklane, odaviskaja. 2005. aasta maailmameister ja 2003. aasta maailmameistrivõistluste hõbemedalist.",
                 Category = "Sportlased"
               },
 
               new Person
               {
-                ImagePath = "",
+                ImagePath = "ratas.png",
                 Name = "Jüri Ratas",
-                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Description = "Eesti poliitik, Keskerakonna liige ja peaminister aastatel 2016–2021.",
                 Category = "Poliitikud"
               },
 
               new Person
               {
-                ImagePath = "",
+                ImagePath = "roivas.png",
                 Name = "Taavi Rõivas",
-                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Description = "Eesti poliitik, Reformierakonna liige ja peaminister aastatel 2014–2016.",
                 Category = "Poliitikud"
               },
 
               new Person
               {
-                ImagePath = "",
+                ImagePath = "kallas.png",
                 Name = "Kaja Kallas",
-                Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
+                Description = "Eesti poliitik, Reformierakonna esimees ja alates 2021. aastast Eesti Vabariigi peaminister.",
                 Category = "Poliitikud"
               },
 
