@@ -12,8 +12,6 @@
                 HeightRequest="185"
                 Aspect="AspectFit" />
 
-            <Label Text="Hello, World!" FontSize="18" HorizontalOptions="Center" />
-
             <!-- Nupp detailivaate avamiseks -->
             <Button
                 Text="Ava Lennart Meri profiil"

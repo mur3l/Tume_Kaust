@@ -14,6 +14,12 @@ namespace TumeKaust
 
 
         private async void OnOpenDetailsClicked(object sender, EventArgs e)
+        private async void OnPersonsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Persons());
+        }
+
+        private void OnCounterClicked(object? sender, EventArgs e)
         {
             // Võtame näidisandmed PersonService’ist
             var person = PersonService.GetPersonByName("Lennart Meri");

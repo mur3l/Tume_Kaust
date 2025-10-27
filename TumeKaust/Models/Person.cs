@@ -8,5 +8,8 @@
         public string Description { get; set; }   
         public List<string> News { get; set; }
         public List<string> NewsLinks { get; set; }
+
+        public string? ImagePath { get; set; }
+
     }
 }
