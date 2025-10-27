@@ -33,7 +33,7 @@ namespace TumeKaust.Services
 
                 new Person
                 {
-                    Name = "Kersti Kaljurand",
+                    Name = "Kersti Kaljulaid",
                     Subtitle = "Vabariigi President\r\n10.10.2016-11.10.2021",
                     HeroImage = "meri1.png",
                     Description = "Ta omandas hariduse Tartu Ülikoolis: 1992. aastal lõpetas loodusteaduskonna geneetika erialal ning 2001. aastal " +
