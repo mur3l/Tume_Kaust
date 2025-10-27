@@ -11,6 +11,6 @@
         public string Category { get; set; }
 
         public string? ImagePath { get; set; }
-
+        public string DetailsKey { get; internal set; }
     }
 }

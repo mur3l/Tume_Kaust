@@ -18,7 +18,8 @@ namespace TumeKaust.Services
                 ImagePath = "meri1.png",
                 Name = "Lennart Meri",
                 Description = "Eesti kirjanik, filmitegija, diplomaat ja poliitik, kes oli Eesti Vabariigi president aastatel 1992–2001.",
-                Category = "Presidendid"
+                Category = "Presidendid",
+                DetailsKey = "LennartMeri"
               },
 
               new Person
@@ -26,7 +27,8 @@ namespace TumeKaust.Services
                 ImagePath = "kaljulaid.png",
                 Name = "Kersti Kaljulaid",
                 Description = "Eesti poliitik ja majandusteadlane, kes oli Eesti Vabariigi president aastatel 2016–2021.",
-                Category = "Presidendid"
+                Category = "Presidendid",
+                DetailsKey = "KerstiKaljulaid"
               },
 
               new Person
@@ -34,7 +36,8 @@ namespace TumeKaust.Services
                 ImagePath = "ilves.png",
                 Name = "Toomas Hendrik Ilves",
                 Description = "Eesti poliitik ja diplomaat, kes oli president aastatel 2006–2016.",
-                Category = "Presidendid"
+                Category = "Presidendid",
+                DetailsKey = "ToomasHendrikIlves"
               },
 
               new Person
@@ -42,7 +45,8 @@ namespace TumeKaust.Services
                 ImagePath = "hunt.jpg",
                 Name = "Brigitte Susanna Hunt",
                 Description = "Eesti meediategelane, laulja ja saatejuht. Tuntud peamiselt oma tegevuse kaudu telesaadetes ja sotsiaalmeedias.",
-                Category = "Suunamudijad"
+                Category = "Suunamudijad",
+                DetailsKey = "BrigitteSusannaHunt"
               },
 
               new Person
@@ -50,7 +54,8 @@ namespace TumeKaust.Services
                 ImagePath = "mallukas.png",
                 Name = "Mariann Treimann",
                 Description = "Eesti ettevõtja, moelooja ja sotsiaalmeediategelane.",
-                Category = "Suunamudijad"
+                Category = "Suunamudijad",
+                DetailsKey = "Mallukas"
               },
 
               new Person
@@ -58,7 +63,8 @@ namespace TumeKaust.Services
                 ImagePath = "partelpoeg.png",
                 Name = "Kristina Pärtelpoeg",
                 Description = "Eesti näitleja ja sisulooja. Tuntud rollide poolest nii teatrilaval kui ka teleseriaalides. Lisaks tegutseb ta sisuloojana sotsiaalmeedias.",
-                Category = "Suunamudijad"
+                Category = "Suunamudijad",
+                DetailsKey = "KristinaPärtelpoeg"
               },
 
               new Person
@@ -66,7 +72,8 @@ namespace TumeKaust.Services
                 ImagePath = "tanak.png",
                 Name = "Ott Tänak",
                 Description = "Eesti rallisõitja, 2019. aasta autoralli maailmameister (WRC). Esimene eestlane, kes on selle tiitli võitnud.",
-                Category = "Sportlased"
+                Category = "Sportlased",
+                DetailsKey = "OttTänak"
               },
 
               new Person
@@ -74,7 +81,8 @@ namespace TumeKaust.Services
                 ImagePath = "vips.png",
                 Name = "Jüri Vips",
                 Description = "Eesti autosportlane, kes on võistelnud vormelisarjades, sealhulgas Formula 2-s ja Red Bulli noorteprogrammis.",
-                Category = "Sportlased"
+                Category = "Sportlased",
+                DetailsKey = "JüriVips"
               },
 
               new Person
@@ -82,7 +90,8 @@ namespace TumeKaust.Services
                 ImagePath = "varnik.png",
                 Name = "Andrus Värnik",
                 Description = "Eesti endine kergejõustiklane, odaviskaja. 2005. aasta maailmameister ja 2003. aasta maailmameistrivõistluste hõbemedalist.",
-                Category = "Sportlased"
+                Category = "Sportlased",
+                DetailsKey = "AndrusVärnik"
               },
 
               new Person
@@ -90,7 +99,8 @@ namespace TumeKaust.Services
                 ImagePath = "ratas.png",
                 Name = "Jüri Ratas",
                 Description = "Eesti poliitik, Keskerakonna liige ja peaminister aastatel 2016–2021.",
-                Category = "Poliitikud"
+                Category = "Poliitikud",
+                DetailsKey = "JüriRatas"
               },
 
               new Person
@@ -98,7 +108,8 @@ namespace TumeKaust.Services
                 ImagePath = "roivas.png",
                 Name = "Taavi Rõivas",
                 Description = "Eesti poliitik, Reformierakonna liige ja peaminister aastatel 2014–2016.",
-                Category = "Poliitikud"
+                Category = "Poliitikud",
+                DetailsKey = "TaaviRõivas"
               },
 
               new Person
@@ -106,7 +117,8 @@ namespace TumeKaust.Services
                 ImagePath = "kallas.png",
                 Name = "Kaja Kallas",
                 Description = "Eesti poliitik, Reformierakonna esimees ja alates 2021. aastast Eesti Vabariigi peaminister.",
-                Category = "Poliitikud"
+                Category = "Poliitikud",
+                DetailsKey = "KajaKallas"
               },
 
           };
