@@ -1,44 +1,115 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:TumeKaust.Models"
+             xmlns:viewmodels="clr-namespace:TumeKaust.ViewModels"
              x:Class="TumeKaust.MainPage">
 
+    <!-- ViewModel binding -->
+    <ContentPage.BindingContext>
+        <viewmodels:MainPageViewModel />
+    </ContentPage.BindingContext>
+
     <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="25">
+        <VerticalStackLayout Padding="20" Spacing="20">
 
-            <!-- Ülemine pilt -->
-            <Image
-                Source="meri1.png"
-                HeightRequest="185"
-                Aspect="AspectFit" />
+            <!-- 1️. Ülemine pilt + otsing -->
+            <VerticalStackLayout Spacing="10">
+                <Image Source="meri1.png"
+                       Aspect="AspectFill"
+                       HeightRequest="200"
+                       x:Name="logoimage"
+                       Opacity="0"/>
+                <Label Text="Tere Tulemast Tumedasse Kausta!"
+                       HorizontalOptions="Center"
+                       FontSize="40"
+                       TextColor="White"/>
+                <Label Text="Kaust, kus ise olla ei tahaks"
+                       HorizontalOptions="Center"
+                       FontSize="20"
+                       TextColor="#ccc"/>
+                <SearchBar Placeholder="Otsi midagi..." />
+            </VerticalStackLayout>
 
-            <!-- Nupp detailivaate avamiseks -->
-            <Button
-                Text="Ava Lennart Meri profiil"
-                Style="{StaticResource ButtonStyle}"
-                Clicked="OnOpenDetailsClicked"
-                HorizontalOptions="Center" />
-
-            <!-- Inimeste loend -->
-            <CollectionView x:Name="PeopleList"
+            <!-- 2️. Keskmine 2x2 kategooriate grid -->
+            <CollectionView ItemsSource="{Binding Categories}"
                             SelectionMode="Single"
-                            SelectionChanged="OnPersonSelected"
-                            Margin="0,20,0,0">
+                            SelectionChanged="OnCategorySelected"
+                            VerticalScrollBarVisibility="Never"
+                            HeightRequest="350">
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical"
+                                     Span="2"
+                                     VerticalItemSpacing="10"
+                                     HorizontalItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
 
                 <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Frame BorderColor="{StaticResource Border}" Padding="10" Margin="5">
-                            <HorizontalStackLayout Spacing="10">
-                                <Image Source="{Binding HeroImage}" WidthRequest="60" HeightRequest="60" Aspect="AspectFill" />
-                                <VerticalStackLayout>
-                                    <Label Text="{Binding Name}" TextColor="{StaticResource Text}" FontAttributes="Bold" />
-                                    <Label Text="{Binding Subtitle}" TextColor="Gray" FontSize="12" />
-                                </VerticalStackLayout>
-                            </HorizontalStackLayout>
+                    <DataTemplate x:DataType="models:MainPageCategoryGrid">
+                        <Frame CornerRadius="15"
+                               HasShadow="True"
+                               Padding="10"
+                               BackgroundColor="#222"
+                               Margin="5">
+                            <VerticalStackLayout HorizontalOptions="Center">
+                                <Image Source="{Binding Image}"
+                                       WidthRequest="100"
+                                       HeightRequest="100"
+                                       Aspect="AspectFit"/>
+                                <Label Text="{Binding Name}"
+                                       TextColor="White"
+                                       FontSize="16"
+                                       HorizontalOptions="Center"/>
+                            </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
+
+            <!-- 3️. Pealkiri alumise gridi kohal -->
+            <Label Text="Värskeimad Patustajad"
+                   HorizontalOptions="Center"
+                   FontSize="20"
+                   TextColor="White"/>
+
+            <!-- 4️. Alumine 1x3 hiljuti uuendatud isikute grid horisontaalselt -->
+            <CollectionView ItemsSource="{Binding RecentPeople}"
+                            SelectionMode="Single"
+                            SelectionChanged="OnRecentSelected"
+                            HeightRequest="150"
+                            HorizontalScrollBarVisibility="Never">
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Horizontal"
+                                       ItemSpacing="10"/>
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:PersonalDetailsGrid">
+                        <Frame CornerRadius="15"
+                               HasShadow="True"
+                               Padding="10"
+                               BackgroundColor="#333"
+                               WidthRequest="120"
+                               HeightRequest="150"
+                               Margin="5">
+                            <VerticalStackLayout HorizontalOptions="Center">
+                                <Image Source="{Binding Image}"
+                                       WidthRequest="80"
+                                       HeightRequest="80"
+                                       Aspect="AspectFill"
+                                       Margin="0,0,0,5"/>
+                                <Label Text="{Binding Name}"
+                                       TextColor="White"
+                                       FontSize="16"
+                                       HorizontalOptions="Center"/>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

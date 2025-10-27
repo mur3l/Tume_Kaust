@@ -6,36 +6,40 @@ namespace TumeKaust
 {
     public partial class MainPage : ContentPage
     {
-
         public MainPage()
         {
             InitializeComponent();
+            FadeInImage();
         }
 
-
-        private async void OnOpenDetailsClicked(object sender, EventArgs e)
-        private async void OnPersonsClicked(object sender, EventArgs e)
+        private async void OnCategorySelected(object sender, SelectionChangedEventArgs e)
         {
-            await Navigation.PushAsync(new Persons());
-        }
-
-        private void OnCounterClicked(object? sender, EventArgs e)
-        {
-            // Võtame näidisandmed PersonService’ist
-            var person = PersonService.GetPersonByName("Lennart Meri");
-
-            // Liigume detailivaatele ja anname isiku kaasa
-            await Navigation.PushAsync(new PersonalDetails(person));
-        }
-
-        private async void OnPersonSelected(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.CurrentSelection.FirstOrDefault() is Person selectedPerson)
+            // Kontrollime, kas valiti mõni element
+            if (e.CurrentSelection.FirstOrDefault() is MainPageCategoryGrid selectedCategory)
             {
-                await Navigation.PushAsync(new PersonalDetails(selectedPerson));
+                await DisplayAlert("Valitud kategooria", selectedCategory.Name, "OK");
+
+                // Tulevikus saad lisada navigeerimise:
+                // await Navigation.PushAsync(new CategoryDetailPage(selectedCategory));
             }
 
-            // Tühjenda valik pärast klikki
+            // Tühjendame valiku, et uuesti klõpsata saaks
+            ((CollectionView)sender).SelectedItem = null;
+        }
+
+        private async void FadeInImage()
+        {
+            await Task.Delay(1000); // ootab 1 sekundi
+            await logoimage.FadeTo(1, 5000); // 5 sekundi jooksul fade-in
+        }
+
+        private async void OnRecentSelected(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.CurrentSelection.FirstOrDefault() is Models.PersonalDetailsGrid selected)
+            {
+                await DisplayAlert("Valitud isik", selected.Name, "OK");
+                // Tulevikus: await Navigation.PushAsync(new PersonDetailPage(selected));
+            }
             ((CollectionView)sender).SelectedItem = null;
         }
     }
