@@ -33,7 +33,7 @@ namespace TumeKaust.ViewModels
             var allPeople = PersonService.GetAllPeople();
 
             // Siin võiks tulevikus sorteerida näiteks viimati muudetud kuupäeva järgi
-            foreach (var person in allPeople.Take(6)) // kuvame 6 esimest inimest
+            foreach (var person in allPeople.Take(3)) // kuvame 3 esimest inimest
             {
                 RecentPeople.Add(new PersonalDetailsGrid
                 {
