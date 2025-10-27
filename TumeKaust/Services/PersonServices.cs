@@ -7,6 +7,7 @@ namespace TumeKaust.Services
         private static List<Person> people = new()
         {
             // sportlased, presidendid, suunamudijad, poliitikud 
+            // \r - rea algus
                 new Person
                 {
                     Name = "Lennart Meri",
