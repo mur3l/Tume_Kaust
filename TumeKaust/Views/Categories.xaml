@@ -2,11 +2,69 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TumeKaust.Views.Categories"
-             Title="Categories">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="Kategooriad"
+             BackgroundColor="{StaticResource Background}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <!-- Content Area -->
+        <VerticalStackLayout Grid.Row="0" Padding="20" Spacing="20">
+            <Image
+                Source="meri1.png"
+                HeightRequest="185"
+                Aspect="AspectFit" />
+            <Label 
+                Text="Patused kategooriad"
+                FontSize="24"
+                TextColor="{StaticResource Text}"
+                FontAttributes="Bold"
+                HorizontalOptions="Center" />
+                
+            <Button 
+                Text="Poliitikud"
+                BackgroundColor="#6a329f"
+                TextColor="#ffd710"
+                FontSize="16"
+                CornerRadius="8"
+                HeightRequest="60" />
+                
+            <Button 
+                Text="Sportlased"
+                BackgroundColor="#6a329f"
+                TextColor="#ffd710"
+                FontSize="16"
+                CornerRadius="8"
+                HeightRequest="60" />
+                
+            <Button 
+                Text="Suunamudijad"
+                BackgroundColor="#6a329f"
+                TextColor="#ffd710"
+                FontSize="16"
+                CornerRadius="8"
+                HeightRequest="60" />
+                
+            <Button 
+                Text="Presidendid"
+                BackgroundColor="#6a329f"
+                TextColor="#ffd710"
+                FontSize="16"
+                CornerRadius="8"
+                HeightRequest="60" />
+        </VerticalStackLayout>
+        
+        <!-- Back Button at Bottom -->
+        <Button Grid.Row="1"
+            Text="Tagasi"
+            BackgroundColor="#6a329f"
+            TextColor="#ffd710"
+            FontSize="16"
+            FontAttributes="Bold"
+            CornerRadius="8"
+            HeightRequest="50"
+            Margin="20,0,20,30" />
+    </Grid>
 </ContentPage>
