@@ -33,7 +33,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Kersti Kaljulaid",
                     Subtitle = "Vabariigi President\r\n10.10.2016-11.10.2021",
-                    HeroImage = "meri1.png",
+                    HeroImage = "kaljulaid.png",
                     DetailsKey = "KerstiKaljulaid",
                     Description = "Ta omandas hariduse Tartu Ülikoolis: 1992. aastal lõpetas loodusteaduskonna geneetika erialal ning 2001. aastal " +
                     "majandusteaduskonna magistrantuuri.\r\n\r\nAastatel 1994–1999 töötas ta erinevates Eesti ettevõtetes: algul telefonikeskjaamade " +
@@ -53,7 +53,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Toomas Hendrik Ilves",
                     Subtitle = "Vabariigi President\r\n09.10.2006-10.10.2016",
-                    HeroImage = "meri1.png",
+                    HeroImage = "ilves.png",
                     DetailsKey = "ToomasHendrikIlves",
                     Description = "President Toomas Hendrik Ilves on sündinud 26. detsembril 1953. aastal Rootsi pealinnas Stockholmis," +
                     " ta on pikemat aega elanud ja töötanud viies riigis.\r\n\r\nLapsepõlvekodust pärit eesti väärtushinnangud, " +
@@ -94,7 +94,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Mariann Treimann tuntud kui Mallukas",
                     Subtitle = "Blogija",
-                    HeroImage = "hunt.jpg",
+                    HeroImage = "mallukas.jpg",
                     DetailsKey = "Mallukas",
                     Description = "Mariann Treimann, enamikule tuntud kui Mallukas – Eesti loetuima blogi autor ning nüüd ka päris enda saate staar –, on oma elu, pere, tööde ja tegemistega seotud seiku blogiveergudel jaganud juba pikki aastaid. ",
                     News = new() { "Uudis 1: Naljakas, kuidas mõned asjad kaugelt vaadates naljakad tunduvad. No näiteks loen iga päev Katerina blogi ja ta päris tihti räägib seal enda tinderikogemustest. Ja see on ausalt öeldes päris naljakas lugemine. Samas ma saan aru, et tal ilmselt pole väga naljakas, sest tegelikult ",
@@ -112,7 +112,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Kristina Pärtelpoeg",
                     Subtitle = "Blogija",
-                    HeroImage = "kristina.jpg",
+                    HeroImage = "partelpoeg.jpg",
                     DetailsKey = "KrisinaPärtelpoeg",
                     Description = "Kristina Suuroja-Pärtelpoeg (sündinud 2. märtsil 1994) on eesti suunamudija ja saatejuht.Ta oli 2021. aasta augustist kuni 2022. aasta detsembrini raadio MyHits hommikuprogrammi saatejuht",
                     News = new() { "Uudis 1: Tõsielusaate „Mida Mallukat! värskest osast selgub, et 30-aastane sisulooja käis kuu aega tagasi rasvaimus. Samal päeval sama tohtri noa all operatsioonil käinud Mallukas soovis aga oma niigi saledat pihta veelgi ilusamaks saada üleliigse naha eemaldusega. „Me oleme nüüd peenemad kui kunagi varem,“ teatas blogija kaamerate ees.",
@@ -131,7 +131,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Ott Tänak",
                     Subtitle = "Rallisõitja",
-                    HeroImage = "ott.webp",
+                    HeroImage = "tanak.png",
                     DetailsKey = "OttTänak",
                     Description = "Ott Tänak (sündinud 15. oktoobril 1987 Kärla vallas Saaremaal) on Eesti " +
                     "rallisõitja. Ta on mitmekordne Eesti meister autorallis ning 2019. aasta autoralli" +
@@ -191,7 +191,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Jüri Ratas",
                     Subtitle = "Poliitik",
-                    HeroImage = "Ratas.webp",
+                    HeroImage = "ratas.png",
                     DetailsKey = "JüriRatas",
                     Description = "Jüri Ratas (sündinud 2. juulil 1978 Tallinnas) on Eesti poliitik. Ta on olnud 2021–2023 Riigikogu esimees ja 2016–2021 Eesti Vabariigi peaminister. " +
                     "2024. aastast on ta Euroopa Parlamendi liige. Kuuludes aastatel 2000–2024[1] Eesti Keskerakonda,[2] oli ta 2005. aasta novembrist kuni 5. aprillini 2007 Tallinna linnapea " +
@@ -211,7 +211,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Taavi Rõivas",
                     Subtitle = "Poliitik",
-                    HeroImage = "Taavi.jpg",
+                    HeroImage = "roivas.png",
                     DetailsKey = "TaaviRõivas",
                     Description = "Taavi Rõivas (sündinud 26. septembril 1979) on Eesti poliitik, Eesti Reformierakonna esimees (2014–2017) ja " +
                     "Eesti peaminister (2014–2016).\r\n\r\nAastatel 2012–2014 oli Rõivas Eesti sotsiaalminister. 14. märtsil 2014 tegi president Ilves Taavi Rõivale ülesandeks " +
@@ -235,7 +235,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Kaja Kallas",
                     Subtitle = "Euroopa Liidu välisasjade ja julgeolekupoliitika kõrge esindaja\r\n",
-                    HeroImage = "ott.webp",
+                    HeroImage = "kallas.png",
                     DetailsKey = "KajaKallas",
                     Description = "Kaja Kallas (aastatel 2002–2006 Kaja Leiger; sündinud 18. juunil 1977 Tallinnas) " +
                     "on Eesti poliitik ja jurist, kes oli aastatel 2021–2024 Eesti peaminister ja 2018–2024 " +
