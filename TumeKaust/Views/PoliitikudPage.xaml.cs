@@ -9,16 +9,6 @@ namespace TumeKaust.Views
             InitializeComponent();
         }
 
-        private async void OnPersonSelected(object sender, SelectionChangedEventArgs e)
-        {
-            if (e.CurrentSelection.FirstOrDefault() is Person selected)
-            {
-                await DisplayAlert("Valitud isik", selected.Name, "OK");
-                // TODO: Navigate to a PersonDetails page later
-            }
-            ((CollectionView)sender).SelectedItem = null;
-        }
-
         // Viib valitud isiku detaili vaatesse
         private async void OnDetailsClicked(object sender, EventArgs e)
         {

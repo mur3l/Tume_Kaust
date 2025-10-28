@@ -49,7 +49,6 @@
         <CollectionView Grid.Row="2" 
                         ItemsSource="{Binding Persons}"
                         SelectionMode="Single"
-                        SelectionChanged="OnPersonSelected"
                         Margin="20,0">
             <CollectionView.ItemTemplate>
                 <DataTemplate x:DataType="models:Person">
@@ -84,16 +83,16 @@
                                 
                             <!-- Nupp mis viib isiku Details lehele -->
                                 <Button Text="Loe lähemalt"
-                                        BackgroundColor="#181818"
+                                        BackgroundColor="#6a329f"
                                         TextColor="#ffd710"
                                         FontSize="16"
                                         FontAttributes="Bold"
                                         CornerRadius="8"
-                                        HeightRequest="50"
-                                        Margin="20,20,20,30"
+                                        HeightRequest="30"
+                                        WidthRequest="200"
+                                        HorizontalOptions="Start"
                                         CommandParameter="{Binding .}"
                                         Clicked="OnDetailsClicked" />
-
 
                             </VerticalStackLayout>
                         </Grid>
