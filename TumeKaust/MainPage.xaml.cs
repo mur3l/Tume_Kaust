@@ -53,6 +53,22 @@ namespace TumeKaust
             ((CollectionView)sender).SelectedItem = null;
         }
 
+        //private async void OpenPersonalDetails(object sender, SelectionChangedEventArgs e)
+        //{
+        //    if (e.CurrentSelection.FirstOrDefault() is Person selected)
+        //    {
+        //        try
+        //        {
+        //            await DisplayAlert("Valitud isik", selected.Name, "OK");
+        //        }
+        //        catch (Exception ex)
+        //        {
+        //            // Handle the exception
+        //            await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
+        //        }
+        //    }
+        //    ((CollectionView)sender).SelectedItem = null;
+        //}
 
         private async void OnPersonSelected(object sender, SelectionChangedEventArgs e)
         {

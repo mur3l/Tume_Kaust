@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:TumeKaust.Models"
+             xmlns:viewmodels="clr-namespace:TumeKaust.ViewModels"
+             x:Class="TumeKaust.Views.PoliitikudPage"
+             Title="Poliitikud"
+             BackgroundColor="#181818">
+
+    <ContentPage.BindingContext>
+        <viewmodels:PoliitikudViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- Header: Isikud -->
+        <Frame Grid.Row="0" 
+               BackgroundColor="#181818" 
+               Padding="20,15" 
+               Margin="0,0,0,10"
+               HasShadow="False">
+            <Label Text="Isikud" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   TextColor="#ffd710" 
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+        <!-- Category Title: Kategoorianimi -->
+        <Frame Grid.Row="1" 
+               BackgroundColor="#181818" 
+               Padding="20,10" 
+               Margin="0,0,0,10"
+               HasShadow="False">
+            <Label Text="Poliitikud" 
+                   FontSize="20" 
+                   FontAttributes="Bold" 
+                   TextColor="#ffd710" 
+                   HorizontalOptions="Center"/>
+        </Frame>
+
+        <!-- Content List -->
+        <CollectionView Grid.Row="2" 
+                        ItemsSource="{Binding Persons}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnPersonSelected"
+                        Margin="20,0">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Person">
+                    <Frame Margin="0,5" 
+                           Padding="15" 
+                           BackgroundColor="#181818" 
+                           CornerRadius="10"
+                           HasShadow="True">
+                        <Grid ColumnDefinitions="100,*" 
+                              VerticalOptions="Center">
+                            
+                            <!-- Image -->
+                            <Image Source="{Binding ImagePath}"
+                                   Aspect="AspectFill"
+                                   WidthRequest="80"
+                                   HeightRequest="80"
+                                   Grid.Column="0"
+                                   Margin="0,0,15,0"
+                                   HorizontalOptions="Start" />
+
+                            <!-- Text Description -->
+                            <VerticalStackLayout Grid.Column="1"
+                                                 VerticalOptions="Center">
+                                <Label Text="{Binding Name}"
+                                       FontSize="18"
+                                       FontAttributes="Bold"
+                                       TextColor="#ffd710" />
+                                <Label Text="{Binding Description}"
+                                       FontSize="14"
+                                       TextColor="#ffd710"
+                                       LineBreakMode="WordWrap" />
+                                
+                            <!-- Nupp mis viib isiku Details lehele -->
+                                <Button Text="Loe lähemalt"
+                                        BackgroundColor="#181818"
+                                        TextColor="#ffd710"
+                                        FontSize="16"
+                                        FontAttributes="Bold"
+                                        CornerRadius="8"
+                                        HeightRequest="50"
+                                        Margin="20,20,20,30"
+                                        CommandParameter="{Binding .}"
+                                        Clicked="OnDetailsClicked" />
+
+
+                            </VerticalStackLayout>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Back Button -->
+        <Button Grid.Row="3"
+                Text="TAGASINUPP"
+                BackgroundColor="#6a329f"
+                TextColor="#ffd710"
+                FontSize="16"
+                FontAttributes="Bold"
+                CornerRadius="8"
+                HeightRequest="50"
+                Margin="20,20,20,30"
+                Clicked="OnBackClicked" />
+    </Grid>
+</ContentPage>
