@@ -80,6 +80,26 @@ namespace TumeKaust
            // Tühjenda valik pärast klikki
            ((CollectionView)sender).SelectedItem = null;
         }
-                
+
+        private async void OnPoliitikudTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PoliitikudPage());
+        }
+
+        private async void OnSportlasedTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SportlasedPage());
+        }
+
+        private async void OnPresidendidTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PresidendidPage());
+        }
+
+        private async void OnSuunamudijadTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SuunamudijadPage());
+        }
+
     }
 }

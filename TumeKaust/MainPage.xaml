@@ -31,41 +31,102 @@
                 <SearchBar Placeholder="Otsi midagi..." />
             </VerticalStackLayout>
 
-            <!-- 2️. Keskmine 2x2 kategooriate grid -->
-            <CollectionView ItemsSource="{Binding Categories}"
-                            SelectionMode="Single"
-                            SelectionChanged="OnCategorySelected"
-                            VerticalScrollBarVisibility="Never"
-                            HeightRequest="350">
+            <!-- Keskmine 2x2 kategooriate grid -->
+            <Grid ColumnSpacing="10" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical"
-                                     Span="2"
-                                     VerticalItemSpacing="10"
-                                     HorizontalItemSpacing="10"/>
-                </CollectionView.ItemsLayout>
+                <!-- Poliitikud -->
+                <Frame Grid.Row="0" Grid.Column="0"
+           CornerRadius="15"
+           BackgroundColor="#222"
+           HasShadow="True"
+           Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="poliitikud.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Aspect="AspectFit"/>
+                        <Label Text="Poliitikud"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPoliitikudTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
 
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:MainPageCategoryGrid">
-                        <Frame CornerRadius="15"
-                               HasShadow="True"
-                               Padding="10"
-                               BackgroundColor="#222"
-                               Margin="5">
-                            <VerticalStackLayout HorizontalOptions="Center">
-                                <Image Source="{Binding Image}"
-                                       WidthRequest="100"
-                                       HeightRequest="100"
-                                       Aspect="AspectFit"/>
-                                <Label Text="{Binding Name}"
-                                       TextColor="White"
-                                       FontSize="16"
-                                       HorizontalOptions="Center"/>
-                            </VerticalStackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                <!-- Sportlased -->
+                <Frame Grid.Row="0" Grid.Column="1"
+           CornerRadius="15"
+           BackgroundColor="#222"
+           HasShadow="True"
+           Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="sportlased.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Aspect="AspectFit"/>
+                        <Label Text="Sportlased"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSportlasedTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Presidendid -->
+                <Frame Grid.Row="1" Grid.Column="0"
+           CornerRadius="15"
+           BackgroundColor="#222"
+           HasShadow="True"
+           Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="presidendid.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Aspect="AspectFit"/>
+                        <Label Text="Presidendid"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPresidendidTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Suunamudijad -->
+                <Frame Grid.Row="1" Grid.Column="1"
+           CornerRadius="15"
+           BackgroundColor="#222"
+           HasShadow="True"
+           Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="suunamudijad.png"
+                   WidthRequest="100"
+                   HeightRequest="100"
+                   Aspect="AspectFit"/>
+                        <Label Text="Suunamudijad"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSuunamudijadTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+            </Grid>
 
             <!-- 3️. Pealkiri alumise gridi kohal -->
             <Label Text="Värskeimad Patustajad"
