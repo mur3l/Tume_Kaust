@@ -53,22 +53,6 @@ namespace TumeKaust
             ((CollectionView)sender).SelectedItem = null;
         }
 
-        //private async void OpenPersonalDetails(object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (e.CurrentSelection.FirstOrDefault() is Person selected)
-        //    {
-        //        try
-        //        {
-        //            await DisplayAlert("Valitud isik", selected.Name, "OK");
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            // Handle the exception
-        //            await DisplayAlert("Error", $"An error occurred: {ex.Message}", "OK");
-        //        }
-        //    }
-        //    ((CollectionView)sender).SelectedItem = null;
-        //}
 
         private async void OnPersonSelected(object sender, SelectionChangedEventArgs e)
         {
@@ -80,16 +64,6 @@ namespace TumeKaust
            // Tühjenda valik pärast klikki
            ((CollectionView)sender).SelectedItem = null;
         }
-                }
-
-        //private async void OnRecentSelected(object sender, SelectionChangedEventArgs e)
-        //{
-        //    if (e.CurrentSelection.FirstOrDefault() is Models.PersonalDetailsGrid selected)
-        //    {
-        //        await DisplayAlert("Valitud isik", selected.Name, "OK");
-        //        // Tulevikus: await Navigation.PushAsync(new PersonDetailPage(selected));
-        //    }
-        //    ((CollectionView)sender).SelectedItem = null;
-        //}
+                
     }
 }
