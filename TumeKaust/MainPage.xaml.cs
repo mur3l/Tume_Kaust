@@ -48,9 +48,9 @@ namespace TumeKaust
             if (e.CurrentSelection.FirstOrDefault() is PersonalDetailsGrid selected)
             {
                 await DisplayAlert("Valitud isik", selected.Name, "OK");
-                
             }
-            ((CollectionView)sender).SelectedItem = null;}
+            ((CollectionView)sender).SelectedItem = null;
+        }
         //private async void OpenPersonalDetails(object sender, SelectionChangedEventArgs e)
         //{
         //    if (e.CurrentSelection.FirstOrDefault() is Person selected)
