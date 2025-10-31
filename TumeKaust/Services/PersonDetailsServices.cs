@@ -254,6 +254,10 @@ namespace TumeKaust.Services
                 },
 
         };
+        public static Person GetPersonDetails(string name)
+        {
+            return people.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
 
         public static List<Person> GetAllPeople() => people;
 

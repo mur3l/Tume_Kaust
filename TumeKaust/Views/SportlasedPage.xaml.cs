@@ -1,4 +1,5 @@
 using TumeKaust.Models;
+using TumeKaust.Services;
 
 namespace TumeKaust.Views
 {
@@ -14,7 +15,17 @@ namespace TumeKaust.Views
         {
             if (sender is Button button && button.CommandParameter is Person selectedPerson)
             {
-                await Navigation.PushAsync(new PersonalDetails(selectedPerson));
+                var detailedPerson = PersonService.GetPersonDetails(selectedPerson.Name);
+
+                if (detailedPerson != null)
+                {
+                    await Navigation.PushAsync(new PersonalDetails(detailedPerson));
+                }
+
+                else
+                {
+                    await DisplayAlert("Viga", "Isiku andmeid ei leitud.", "OK");
+                }
             }
         }
         private async void OnBackClicked(object sender, EventArgs e)
