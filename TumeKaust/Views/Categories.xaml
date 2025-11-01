@@ -28,8 +28,10 @@
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
                 FontSize="16"
+                FontAttributes="Bold"
                 CornerRadius="8"
-                HeightRequest="60"
+                HeightRequest="30"
+                WidthRequest="200"
                 Clicked="OnPoliitikudClicked" />
                 
             <Button 
@@ -37,8 +39,10 @@
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
                 FontSize="16"
+                FontAttributes="Bold"
                 CornerRadius="8"
-                HeightRequest="60"
+                HeightRequest="30"
+                WidthRequest="200"
                 Clicked="OnSportlasedClicked" />
                 
             <Button 
@@ -46,8 +50,10 @@
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
                 FontSize="16"
+                FontAttributes="Bold"
                 CornerRadius="8"
-                HeightRequest="60"
+                HeightRequest="30"
+                WidthRequest="200"
                 Clicked="OnSuunamudijadClicked" />
                 
             <Button 
@@ -55,21 +61,24 @@
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
                 FontSize="16"
+                FontAttributes="Bold"
                 CornerRadius="8"
-                HeightRequest="60"
+                HeightRequest="30"
+                WidthRequest="200"
                 Clicked="OnPresidendidClicked" />
         </VerticalStackLayout>
         
         <!-- Back Button at Bottom -->
-        <Button Grid.Row="1"
-            Text="TAGASI"
-            BackgroundColor="#6a329f"
-            TextColor="#ffd710"
-            FontSize="16"
-            FontAttributes="Bold"
-            CornerRadius="8"
-            HeightRequest="50"
-            Margin="20,0,20,30"
-            Clicked="OnBackClicked" />
+        <Button Grid.Row="3"
+                Text="TAGASI"
+                BackgroundColor="#6a329f"
+                TextColor="#ffd710"
+                VerticalOptions="Center"
+                WidthRequest="80"
+                HeightRequest="35"
+                CornerRadius="8"
+                FontSize="16"
+                FontAttributes="Bold"
+                Clicked="OnBackClicked" />
     </Grid>
 </ContentPage>
