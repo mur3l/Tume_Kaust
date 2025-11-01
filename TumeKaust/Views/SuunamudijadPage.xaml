@@ -21,20 +21,20 @@
 
         <!-- Header: Isikud -->
         <Frame Grid.Row="0" 
-               BackgroundColor="#333" 
+               BackgroundColor="#181818" 
                Padding="20,15" 
                Margin="0,0,0,10"
                HasShadow="False">
             <Label Text="Isikud" 
                    FontSize="24" 
                    FontAttributes="Bold" 
-                   TextColor="White" 
+                   TextColor="#ffd710" 
                    HorizontalOptions="Center"/>
         </Frame>
 
         <!-- Category Title: Kategoorianimi -->
         <Frame Grid.Row="1" 
-               BackgroundColor="#444" 
+               BackgroundColor="#181818" 
                Padding="20,10" 
                Margin="0,0,0,10"
                HasShadow="False">
@@ -53,7 +53,7 @@
                 <DataTemplate x:DataType="models:Person">
                     <Frame Margin="0,5" 
                            Padding="15" 
-                           BackgroundColor="#222" 
+                           BackgroundColor="#181818" 
                            CornerRadius="10"
                            HasShadow="True">
                         <Frame.GestureRecognizers>
@@ -78,11 +78,24 @@
                                 <Label Text="{Binding Name}"
                                        FontSize="18"
                                        FontAttributes="Bold"
-                                       TextColor="White" />
+                                       TextColor="#ffd710" />
                                 <Label Text="{Binding Description}"
                                        FontSize="14"
-                                       TextColor="#ccc"
+                                       TextColor="#ffd710"
                                        LineBreakMode="WordWrap" />
+                            <!-- Nupp mis viib isiku Details lehele -->
+                            <Button Text="Loe lähemalt"
+                                    BackgroundColor="#6a329f"
+                                    TextColor="#ffd710"
+                                    FontSize="16"
+                                    FontAttributes="Bold"
+                                    CornerRadius="8"
+                                    HeightRequest="30"
+                                    WidthRequest="200"
+                                    HorizontalOptions="Start"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="OnDetailsClicked" />
+                                
                             </VerticalStackLayout>
                         </Grid>
                     </Frame>
