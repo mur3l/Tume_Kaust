@@ -48,7 +48,7 @@ namespace TumeKaust.Services
               new Person
               { 
                 ImagePath = "mallukas.png",
-                Name = "Mariann Treimann",
+                Name = "Mariann Treimann tuntud kui Mallukas",
                 Description = "Eesti ettevõtja, moelooja ja sotsiaalmeediategelane.",
                 Category = "Suunamudijad"
               },
@@ -71,9 +71,9 @@ namespace TumeKaust.Services
 
               new Person
               {
-                ImagePath = "vips.png",
-                Name = "Jüri Vips",
-                Description = "Eesti autosportlane, kes on võistelnud vormelisarjades, sealhulgas Formula 2-s ja Red Bulli noorteprogrammis.",
+                ImagePath = "mirkko.png",
+                Name = "Mirkko Moisar",
+                Description = "Eesti kikkpoksija.",
                 Category = "Sportlased"
               },
 

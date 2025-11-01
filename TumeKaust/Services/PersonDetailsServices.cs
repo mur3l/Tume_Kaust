@@ -94,7 +94,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Mariann Treimann tuntud kui Mallukas",
                     Subtitle = "Blogija",
-                    HeroImage = "mallukas.jpg",
+                    HeroImage = "mallukas.png",
                     DetailsKey = "Mallukas",
                     Description = "Mariann Treimann, enamikule tuntud kui Mallukas – Eesti loetuima blogi autor ning nüüd ka päris enda saate staar –, on oma elu, pere, tööde ja tegemistega seotud seiku blogiveergudel jaganud juba pikki aastaid. ",
                     News = new() { "Uudis 1: Naljakas, kuidas mõned asjad kaugelt vaadates naljakad tunduvad. No näiteks loen iga päev Katerina blogi ja ta päris tihti räägib seal enda tinderikogemustest. Ja see on ausalt öeldes päris naljakas lugemine. Samas ma saan aru, et tal ilmselt pole väga naljakas, sest tegelikult ",
@@ -112,7 +112,7 @@ namespace TumeKaust.Services
                 {
                     Name = "Kristina Pärtelpoeg",
                     Subtitle = "Blogija",
-                    HeroImage = "partelpoeg.jpg",
+                    HeroImage = "partelpoeg.png",
                     DetailsKey = "KrisinaPärtelpoeg",
                     Description = "Kristina Suuroja-Pärtelpoeg (sündinud 2. märtsil 1994) on eesti suunamudija ja saatejuht.Ta oli 2021. aasta augustist kuni 2022. aasta detsembrini raadio MyHits hommikuprogrammi saatejuht",
                     News = new() { "Uudis 1: Tõsielusaate „Mida Mallukat! värskest osast selgub, et 30-aastane sisulooja käis kuu aega tagasi rasvaimus. Samal päeval sama tohtri noa all operatsioonil käinud Mallukas soovis aga oma niigi saledat pihta veelgi ilusamaks saada üleliigse naha eemaldusega. „Me oleme nüüd peenemad kui kunagi varem,“ teatas blogija kaamerate ees.",
@@ -154,8 +154,7 @@ namespace TumeKaust.Services
                     Subtitle = "Kikkpoksija",
                     HeroImage = "mirkko.png",
                     DetailsKey = "MirkkoMoisar",
-                    Description = "Brigitte Susanne Hunt on õppinud Audentese Erakoolis ja lõpetanud 2014. aastal Tallinna 21. Kooli." +
-                    "2017. aastal lõpetas Tartu Ülikooli ajakirjanduse ja kommunikatsiooni erialal",
+                    Description = "Mirkko Moisar on võitluskunstide sõdalane, kes jõudis poksini vägagi raskes keskkonnas kasvanuna. Seda hinnatavamad on tema saavutused ringis, sest Mirkko on kaasa löönud paljudel rahvusvahelistel üritustel ning enamasti edukalt.",
                     News = new() { "Uudis 1: Tuntud kikkpoksija Mirkko Moisar sai esmaspäeval Harju maakohtus vägivallatsemise ja võõra dokumendi rikkumise eest rahalise karistuse.",
                                    "Uudis 2: Mirkko Moisar jäi politseile vahele 26. juunil ja tema hingeõhus oli alkoholi 0,68 mg/l (1,56 promilli), vahendas Delfi. Moisar selgitas, et oli söögi kõrvale joonud ühe õlle. Oma tegu ta kahetses. ",
                                    "Uudis 3: Harju maakohtu Tallinna kohtumajas arutati nädal aega tagasi Mirkko Moisari kaebust PPA Põhja prefektuuri Lääne-Harju politseijaoskonna menetlustalituse väärteootsuse kohta, millega sooviti temalt juhtimisõigust pooleks aastaks ära võtta.",
