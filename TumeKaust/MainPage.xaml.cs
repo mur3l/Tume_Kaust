@@ -37,9 +37,19 @@ namespace TumeKaust
         {
             if (e.CurrentSelection.FirstOrDefault() is Models.PersonalDetailsGrid selected)
             {
-                await DisplayAlert("Valitud isik", selected.Name, "OK");
-                // Tulevikus: await Navigation.PushAsync(new PersonDetailPage(selected));
+                // Leia inimene andmeservicest nime järgi
+                var person = TumeKaust.Services.PersonService.GetPersonByName(selected.Name);
+                if (person != null)
+                {
+                    // Ava detailivaade
+                    await Navigation.PushAsync(new Views.PersonalDetails(person));
+                }
+                else
+                {
+                    await DisplayAlert("Viga", "Isiku andmeid ei leitud.", "OK");
+                }
             }
+
             ((CollectionView)sender).SelectedItem = null;
         }
 
@@ -70,5 +80,26 @@ namespace TumeKaust
            // Tühjenda valik pärast klikki
            ((CollectionView)sender).SelectedItem = null;
         }
+
+        private async void OnPoliitikudTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PoliitikudPage());
+        }
+
+        private async void OnSportlasedTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SportlasedPage());
+        }
+
+        private async void OnPresidendidTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PresidendidPage());
+        }
+
+        private async void OnSuunamudijadTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SuunamudijadPage());
+        }
+
     }
 }

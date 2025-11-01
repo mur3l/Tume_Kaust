@@ -1,6 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.ComponentModel;
 using TumeKaust.Models;
+using TumeKaust.Services;
 
 namespace TumeKaust.ViewModels
 {
@@ -25,24 +26,43 @@ namespace TumeKaust.ViewModels
             Categories.Add(new MainPageCategoryGrid { Name = "Sportlased", Image = "sportlased.png" });
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        //public event PropertyChangedEventHandler PropertyChanged;
 
         private void LoadRecentPeople()
         {
-            var allPeople = new List<PersonalDetailsGrid>
-        {
-            new() { PersonalDetailsId = 1, Name = "Andrus Veerpalu", Image = "sportlased.png", UpdatedAt = DateTime.Now.AddHours(-1) },
-            new() { PersonalDetailsId = 2, Name = "Lennart Meri", Image = "meri1.png", UpdatedAt = DateTime.Now.AddHours(-2) },
-            new() { PersonalDetailsId = 3, Name = "Rain Epler", Image = "poliitikud.jpg", UpdatedAt = DateTime.Now.AddHours(-3) },
-            new() { PersonalDetailsId = 4, Name = "Mingi triin ja justin vist olid", Image = "suunamudijad.webp", UpdatedAt = DateTime.Now.AddHours(-4) }
-        };
+            var allPeople = PersonService.GetAllPeople();
 
-            // Sorteeri hiljuti uuendatud järgi ja võta kolm esimest
-            foreach (var person in allPeople.OrderByDescending(p => p.UpdatedAt).Take(2))
+            // Siin võiks tulevikus sorteerida näiteks viimati muudetud kuupäeva järgi
+            foreach (var person in allPeople.Take(3)) // kuvame 3 esimest inimest
             {
-                RecentPeople.Add(person);
+                RecentPeople.Add(new PersonalDetailsGrid
+                {
+                    PersonalDetailsId = 0, // kui sul pole ID, jäta 0
+                    Name = person.Name,
+                    Image = person.HeroImage,
+                    UpdatedAt = DateTime.Now // või lisa hiljem tegelik väärtus
+                });
             }
         }
+
+            public event PropertyChangedEventHandler PropertyChanged;
+
+        //private void LoadRecentPeople()
+        //{
+        //    var allPeople = new List<PersonalDetailsGrid>
+        //{
+        //    new() { PersonalDetailsId = 1, Name = "Andrus Veerpalu", Image = "sportlased.png", UpdatedAt = DateTime.Now.AddHours(-1) },
+        //    new() { PersonalDetailsId = 2, Name = "Lennart Meri", Image = "meri1.png", UpdatedAt = DateTime.Now.AddHours(-2) },
+        //    new() { PersonalDetailsId = 3, Name = "Rain Epler", Image = "poliitikud.jpg", UpdatedAt = DateTime.Now.AddHours(-3) },
+        //    new() { PersonalDetailsId = 4, Name = "Mingi triin ja justin vist olid", Image = "suunamudijad.webp", UpdatedAt = DateTime.Now.AddHours(-4) }
+        //};
+
+        //    // Sorteeri hiljuti uuendatud järgi ja võta kolm esimest
+        //    foreach (var person in allPeople.OrderByDescending(p => p.UpdatedAt).Take(4))
+        //    {
+        //        RecentPeople.Add(person);
+        //    }
+        //}
 
     }
 }

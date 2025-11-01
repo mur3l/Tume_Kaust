@@ -83,7 +83,7 @@ namespace TumeKaust.Services
                                    "Uudis 2: Päev pärast kohtuistungit Mallu Mariann Treimanniga tegi Hunt ühismeediasse postituse, kus tunnistas, et oli kohtusaalis liialt emotsionaalne. «Peaksin olema kiuslik, südametu ja mehelikus energias värdjas, et mul oleks fänne. Ei, ma oleks pigem vaene ja üksi,» kirjutab ta.",
                                    "Uudis 3: Desiree eitas, nagu oleks tema ja Taavi vahel midagi juhtunud. „Lisan veel selle, et Luisa ja Taavi on mu ammused tuttavad ja olime siiski suht palju ka kolmekesi,“ avaldas ta oma sotsiaalmeedias, et nende seltskonnas oli inimesi palju rohkem.\r\n„Oli tore õhtu ja no päriselt minu ja Taavi vahel ei juhtunud mitte midagi sündsusetut. All good ja fun (kõik on hästi ja tore-toim).“",
                     },
-                    NewsLinks = new() {
+                    NewsLinks = new() { 
                             "https://www.ohtuleht.ee/melu/1088458/suur-draama-ajajoon-brigitte-susanne-hunt-versus-koik-teised-vaata-kuidas-rullus-avalikkuse-silme-ees-lahti-selle-suve-skandaalseim-tuli",
                             "https://elu24.postimees.ee/8334256/brigitte-susanne-hunt-vabandab-oma-kaitumise-parast-kohtusaalis-ilmselgelt-olin-uliemotsionaalne-ja-ebaprofessionaalne",
                             "https://www.tv3.ee/3-portaal/seltskond/draama-ajajoon-skandaale-rohkem-kui-nadalapaevi-ehk-mis-toimub-brigitte-susanne-hundiga/"
@@ -245,7 +245,7 @@ namespace TumeKaust.Services
                     News = new() { "Uudis 1: Venemaa siseministeeriumi tagaotsitavate andmebaasis on ilmunud Eesti peaministri Kaja Kallase ja riigisekretär Taimar Peterkopi nimed. Kuigi andmebaasis ei ole välja toodud, millise paragrahvi alusel Kallast ja Peterkopi tagaotsitakse, tekitab see siiski rahvusvahelist tähelepanu. Varasemalt andis Venemaa uurimiskomitee esimees Aleksandr Bastrõkin korralduse kontrollida Eesti võimude tegevust seoses tankimonumendi eemaldamisega Narvas.",
                                    "Uudis 2: Politoloog Tõnis Leht asetab Kaja Kallase samale skaalale president Lennart Meri ja Toomas Hendrik Ilvesega. „Ta on neist isegi kraadi võrra nähtavam, kuuldavam ja mõjukam olnud,“ märgib Leht.\r\n\r\nEile andis Kaja Kallas president Alar Karisele üle tagasiastumisavalduse. Täna tegi president peaministrikandidaat Kristen Michalile ettepaneku moodustada uus valitsus.\r\n\r\nSee tähendab, et Eesti ühe välispoliitiliselt enim silma paistnud peaministri kolme ja poole aastane ametiaeg on läbi saanud. Sellesse aega on mahtunud nii koroonaaeg, energiakriis ja Venemaa täiemahuline sõda Ukraina vastu kui ka riigisisesed skandaalid ja tülid.\r\nOled juba tellija?\r\nMis on Delfi Kogupakett?\r\nTellijana saad lugeda ka neid artikleid:\r\nSotsid tahavad homme alustada Tallinna võimukõnelusi, Isamaa keeldub kohtumisel osalemast\r\nSotsid tahavad homme alustada Tallinna võimukõnelusi, Isamaa keeldub kohtumisel osalemast (288)\r\nTapa vallavalitsuse liige ja sotsiaalosakonna juht veab samal ajal edukat sotsiaalteenuste MTÜ-d. Politsei asus uurima võimalikku korruptsiooni\r\nTapa vallavalitsuse liige ja sotsiaalosakonna juht veab samal ajal edukat sotsiaalteenuste MTÜ-d. Politsei asus uurima võimalikku korruptsiooni (118)\r\nKairi Kuusemaa võib vanglast enne tähtaja lõppu vabaneda\r\nKairi Kuusemaa võib vanglast enne tähtaja lõppu vabaneda (122)\r\nSamal teemal\r\n15.07.2024\r\nFOTOD JA VIDEO | Kaja Kallas andis presidendile üle tagasiastumisavalduse." ,
                                    "Uudis 3: Euroopa Parlamendi saadik Jaak Madison (EKRE) kirjutab sotsiaalmeedias, et Kaja Kallas on puhkenud skandaali kontekstis käitunud valelikult, silmakirjalikult ja kahepalgeliselt, nõudes kõikidelt ettevõtjatelt Venemaa suunas äritegevuse lõpetamist, samal ajal kui tema abikaasa teenib mõnusat tulu Venemaa ärist. Ühtlasi kutsub ta rahvast meeleavaldusele Eesti mainet kahjustanud peaministri vastu.",
-                    },
+                    },  
                     NewsLinks = new() {
                                 "https://minuaeg.com/skandaal-kaja-kallase-ja-ametnike-nimed-ilmusid-venemaa-tagaotsitavate-nimekirja/",
                                 "https://www.delfi.ee/artikkel/120307812/ulevaade-kaja-kallas-on-hoolimata-skandaalidest-ja-ulatuslikest-kriisidest-jaanud-silma-tugeva-valispoliitilise-kailakujuna",
@@ -255,10 +255,10 @@ namespace TumeKaust.Services
 
         };
 
-
-
-
-
+        public static Person GetPersonDetails(string name)
+        {
+            return people.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
+        }
 
         public static List<Person> GetAllPeople() => people;
 

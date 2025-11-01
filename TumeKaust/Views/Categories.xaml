@@ -29,7 +29,8 @@
                 TextColor="#ffd710"
                 FontSize="16"
                 CornerRadius="8"
-                HeightRequest="60" />
+                HeightRequest="60"
+                Clicked="OnPoliitikudClicked" />
                 
             <Button 
                 Text="Sportlased"
@@ -37,7 +38,8 @@
                 TextColor="#ffd710"
                 FontSize="16"
                 CornerRadius="8"
-                HeightRequest="60" />
+                HeightRequest="60"
+                Clicked="OnSportlasedClicked" />
                 
             <Button 
                 Text="Suunamudijad"
@@ -45,7 +47,8 @@
                 TextColor="#ffd710"
                 FontSize="16"
                 CornerRadius="8"
-                HeightRequest="60" />
+                HeightRequest="60"
+                Clicked="OnSuunamudijadClicked" />
                 
             <Button 
                 Text="Presidendid"
@@ -53,7 +56,8 @@
                 TextColor="#ffd710"
                 FontSize="16"
                 CornerRadius="8"
-                HeightRequest="60" />
+                HeightRequest="60"
+                Clicked="OnPresidendidClicked" />
         </VerticalStackLayout>
         
         <!-- Back Button at Bottom -->
@@ -65,6 +69,7 @@
             FontAttributes="Bold"
             CornerRadius="8"
             HeightRequest="50"
-            Margin="20,0,20,30" />
+            Margin="20,0,20,30"
+            Clicked="OnBackClicked" />
     </Grid>
 </ContentPage>
