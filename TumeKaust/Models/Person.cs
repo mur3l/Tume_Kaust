@@ -12,5 +12,7 @@
 
         public string? ImagePath { get; set; }
 
+        public string? DetailsKey { get; set; }
+
     }
 }
