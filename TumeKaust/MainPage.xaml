@@ -51,7 +51,7 @@
                        HasShadow="True"
                        Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
-                        <Image Source="poliitikud.png"
+                        <Image Source="poliitikudmain.jpg"
                                WidthRequest="100"
                                HeightRequest="100"
                                Aspect="AspectFit"/>
@@ -73,7 +73,7 @@
                        HasShadow="True"
                        Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
-                        <Image Source="sportlased.png"
+                        <Image Source="sportlasedmain.jpg"
                                WidthRequest="100"
                                HeightRequest="100"
                                Aspect="AspectFit"/>
@@ -95,7 +95,7 @@
                        HasShadow="True"
                        Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
-                        <Image Source="presidendid.png"
+                        <Image Source="presidendidmain.jpg"
                                WidthRequest="100"
                                HeightRequest="100"
                                Aspect="AspectFit"/>
@@ -117,7 +117,7 @@
                        HasShadow="True"
                        Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
-                        <Image Source="suunamudijad.png"
+                        <Image Source="suunamudijadmain.jpg"
                                WidthRequest="100"
                                HeightRequest="100"
                                Aspect="AspectFit"/>
