@@ -59,15 +59,14 @@
                            HasShadow="True">
                         <Grid ColumnDefinitions="100,*" 
                               VerticalOptions="Center">
-                            
+
                             <!-- Image -->
                             <Image Source="{Binding ImagePath}"
                                    Aspect="AspectFill"
                                    WidthRequest="80"
                                    HeightRequest="80"
                                    Grid.Column="0"
-                                   Margin="0,0,15,0"
-                                   HorizontalOptions="Start" />
+                                   Margin="0,0,15,0" />
 
                             <!-- Text Description -->
                             <VerticalStackLayout Grid.Column="1"
@@ -106,11 +105,12 @@
                 Text="TAGASI"
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
+                VerticalOptions="Center"
+                WidthRequest="80"
+                HeightRequest="35"
+                CornerRadius="8"
                 FontSize="16"
                 FontAttributes="Bold"
-                CornerRadius="8"
-                HeightRequest="50"
-                Margin="20,20,20,30"
                 Clicked="OnBackClicked" />
     </Grid>
 </ContentPage>

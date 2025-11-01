@@ -62,7 +62,7 @@
                         </Frame.GestureRecognizers>
                         <Grid ColumnDefinitions="100,*" 
                               VerticalOptions="Center">
-                            
+
                             <!-- Image -->
                             <Image Source="{Binding ImagePath}"
                                    Aspect="AspectFill"
@@ -109,11 +109,12 @@
                 Text="TAGASI"
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
+                VerticalOptions="Center"
+                WidthRequest="80"
+                HeightRequest="35"
+                CornerRadius="8"
                 FontSize="16"
                 FontAttributes="Bold"
-                CornerRadius="8"
-                HeightRequest="50"
-                Margin="20,20,20,30"
                 Clicked="OnBackClicked" />
     </Grid>
 </ContentPage>
