@@ -8,12 +8,12 @@ namespace TumeKaust.Services
         {
             // sportlased, presidendid, suunamudijad, poliitikud 
             // \r - rea algus
-                new Person
+                               new Person
                 {
                     Name = "Lennart Meri",
                     Subtitle = "Vabariigi President\r\n06.10.1992-08.10.2001",
                     HeroImage = "meri1.png",
-                    DetailsKey = "LennartMeri", 
+                    DetailsKey = "LennartMeri",
                     Description = "Lennart Meri sündis 29. märtsil 1929 Tallinnas Eesti diplomaadi ja hilisema Shakespeare'i tõlkija Georg Meri perekonnas. " +
                     "Koos perekonnaga lahkus ta varakult Eestist ning pidi " +
                     "üheksa korda kooli ning neli korda keelt vahetama. " ,
@@ -40,8 +40,8 @@ namespace TumeKaust.Services
                     "müügijuhina Eesti Telefonis, hiljem Hoiupank Marketsis ja Hansapank Marketsis.",
                     News = new() { "Uudis 1: President Kersti Kaljulaid ütles Urmas Reinsalu umbusaldamist ja sellega seonduvat kommenteerides, et Eesti vajab rohkem lugupidavat suhtumist ja erinevate arusaamade aktsepteerimist.",
                                    "Uudis 2: Kallas märkis, et ajakirjandus võiks eri juhtumeid käsitledes säilitada poliitikute suhtes samad standardid ning et võrreldes tema abikaasa Arvo Halliku osalusega Venemaal äri teinud ettevõttes sai Kaljulaidi osalemine Alexela nõukogus proportsionaalselt väga vähe tähelepanu, kirjutab ERR.\r\n\r\n„Lihtsalt kui on ühed moraalsed nõudmised ühele, siis võiksid olla ka teistele. Hea näide on, kuidas Kersti Kaljulaidi asja ja mind käsitletakse,“ pahandas Kallas" ,
-                                   "Uudis 3: Kersti Kaljulaid rikub Eesti põhiseaduse mõtet - president ei ole peaministri ülemus ", 
-                    },              
+                                   "Uudis 3: Kersti Kaljulaid rikub Eesti põhiseaduse mõtet - president ei ole peaministri ülemus ",
+                    },
                     NewsLinks = new() {
                             "https://www.postimees.ee/4384851/kaljulaid-ojasoo-ja-reinsalu-skandaalist-vajame-rohkem-lugupidavat-suhtumist",
                             "https://www.ohtuleht.ee/1093247/kaja-kallas-ajakirjanikele-miks-te-kersti-kaljulaidi-samamoodi-ei-runda-kui-mind",
@@ -62,8 +62,8 @@ namespace TumeKaust.Services
 
                     News = new() { "Uudis 1: «Teda oli näha juba meie abielu ajal,» tõdes Ieva Ilves Kroonikale, et Toomas Hendriku kaaslasena nähtud naine ei ole talle võõras.\r\n\r\n​President Toomas Hendrik Ilves tekitas tänavusel roosiaia vastuvõtul elevust, saabudes üritusele uue, seni tundmatu saatjaga. Ajakirjanduse andmetel on tegemist USA päritolu arsti dr Alicia Skarimbasega, kellega Ilvest seob väidetavalt aastatepikkune tutvus.",
                                    "Uudis 2: President Ilves nimetas intervjuus Venemaa-vastaste sanktsioonide lõdvendamist pooldavaid Kreekat, Itaaliat, Ungarit ja Küprost Venemaa presidendi Vladimir Putini „kasulikeks idiootideks“ ning süüdistas neid Euroopa Liidu ühtsuse lõhkumises." ,
-                                   "Uudis 3: Ekspresident Toomas Hendrik Ilves on oma endisele abikaasale Evelin Ilvesele võlgu 55 000 eurot, näitab ekspresidendi huvide deklaratsioon. Kohustuse aluseks on deklaratsioonis märgitud \"lahutusest tulenevalt\".", 
-                    },              
+                                   "Uudis 3: Ekspresident Toomas Hendrik Ilves on oma endisele abikaasale Evelin Ilvesele võlgu 55 000 eurot, näitab ekspresidendi huvide deklaratsioon. Kohustuse aluseks on deklaratsioonis märgitud \"lahutusest tulenevalt\".",
+                    },
                     NewsLinks = new() {
                             "https://elu24.postimees.ee/8314126/ieva-ilves-toomas-hendrik-ilvese-uuest-kaaslasest-teda-oli-naha-juba-meie-abielu-ajal",
                             "https://www.aripaev.ee/uudised/2015/04/09/president-toomas-hendrik-ilvese-uus-skandaal",
@@ -138,7 +138,7 @@ namespace TumeKaust.Services
                     "maailmameister.",
                     News = new() { "Uudis 1: Sardiinias oma juubelirallil hiilgavat sõitu näidanud Ott Tänak langes punktikatsega esimeselt kohalt viiendaks. Eestlase masinalt kadus katse alguses roolivõim.\r\n\r\nEnne Tänakut finišisse jõudnud hispaanlane Dani Sordo ütles intervjuud alustades, et Tänak on katsel seisma jäänud ja peatselt kinnitas seda ka otsepilt. Eestlane keeras rooli paremale, auto aga vasakule teepiirdesse, ehk masinast kadus roolivõim.",
                                    "Uudis 2: Nagu juba traditsiooniks on saanud, võtavad rallisõitjad iga MM-etapi eel toimuva testikaste ühel läbimisel oma kõrvalistmele ka mõne tuntud inimese." ,
-                                   "Uudis 3: Pärast Rally Estoniat määrasid kohtunikud Ott Tänakule kopsaka rahatrahvi. Nimelt eksis eestlane reeglite täitmisel ning lisaks esitas kohtunikele valesid väiteid.\r\n\r\nPärast Rally Estoniat selgus, et kohtunikud on määranud kolmanda koha teeninud Tänakule 1000 eurot trahvi. Lisaks sellele on teda trahvitud tingimisi 3000 euroga, ent see läheb täimisele, kui ta eksib taas samade reeglite vastu. Mis aga juhtus?", 
+                                   "Uudis 3: Pärast Rally Estoniat määrasid kohtunikud Ott Tänakule kopsaka rahatrahvi. Nimelt eksis eestlane reeglite täitmisel ning lisaks esitas kohtunikele valesid väiteid.\r\n\r\nPärast Rally Estoniat selgus, et kohtunikud on määranud kolmanda koha teeninud Tänakule 1000 eurot trahvi. Lisaks sellele on teda trahvitud tingimisi 3000 euroga, ent see läheb täimisele, kui ta eksib taas samade reeglite vastu. Mis aga juhtus?",
                     },
                         NewsLinks = new() {
                             "https://sport.err.ee/952895/video-punktikatsel-esikoha-kaotanud-tanak-oli-finisis-aarmiselt-loodud",
@@ -158,7 +158,7 @@ namespace TumeKaust.Services
                     "2017. aastal lõpetas Tartu Ülikooli ajakirjanduse ja kommunikatsiooni erialal",
                     News = new() { "Uudis 1: Tuntud kikkpoksija Mirkko Moisar sai esmaspäeval Harju maakohtus vägivallatsemise ja võõra dokumendi rikkumise eest rahalise karistuse.",
                                    "Uudis 2: Mirkko Moisar jäi politseile vahele 26. juunil ja tema hingeõhus oli alkoholi 0,68 mg/l (1,56 promilli), vahendas Delfi. Moisar selgitas, et oli söögi kõrvale joonud ühe õlle. Oma tegu ta kahetses. ",
-                                   "Uudis 3:  Harju maakohtu Tallinna kohtumajas arutati nädal aega tagasi Mirkko Moisari kaebust PPA Põhja prefektuuri Lääne-Harju politseijaoskonna menetlustalituse väärteootsuse kohta, millega sooviti temalt juhtimisõigust pooleks aastaks ära võtta.",
+                                   "Uudis 3: Harju maakohtu Tallinna kohtumajas arutati nädal aega tagasi Mirkko Moisari kaebust PPA Põhja prefektuuri Lääne-Harju politseijaoskonna menetlustalituse väärteootsuse kohta, millega sooviti temalt juhtimisõigust pooleks aastaks ära võtta.",
                     },
                     NewsLinks = new() {
                             "https://sport.postimees.ee/6896494/eesti-tipp-poksija-sai-vagivallatsemise-eest-rahalise-karistuse",
@@ -178,7 +178,7 @@ namespace TumeKaust.Services
                     "\r\n\r\nIsiklik rekord: 87.83 (19. august 2003 Valga, kuni 2018. aastani Eesti rekord)",
                     News = new() { "Uudis 1: Harju maakohtus toimus täna istung tingimisi vangi mõistetud odaviske maailmameistri Andrus Värniku üle, kuna mees rikkus kohtu poolt määratud tingimusi.\r\n\r\nKuna Värnikul puudus kaitsja, siis otsustati tänasel istungil talle kaitsja määrata ja lükata tema asja arutamine edasi 25. novembrile. Maailmameister oli juba kohtusaalist välja sammumas, kui kohtunik tundis Värnikul järsku alkoholihaisu ja kutsus politsei, et joovet kontrollida.",
                                    "Uudis 2: Harju maakohus pikendas täna odaviske eksmaailmameistrile Andrus Värnikule mõistetud tingimisi vangistuse katseaega, kuna ta rikkus talle pandud kriminaalhooldusnõudeid, ühtlasi kohustas kohus teda minema alkoholismiravile.\r\n\r\nKohus pikendas Värniku katseaega ühe kuu võrra, mis lõppeb 2017. aasta 26. märtsil, ütles maakohtu pressiesindaja Kristina Ots ERR-i uudisteportaalile." ,
-                                   "Uudis 3: Naise peksmise eest tingimisi vangistatud Andrus Värnikust on sündinud uus mees", 
+                                   "Uudis 3: Naise peksmise eest tingimisi vangistatud Andrus Värnikust on sündinud uus mees",
                     },
                     NewsLinks = new() {
                             "https://www.delfi.ee/artikkel/70183955/delfi-fotod-ja-video-tingimisi-vangi-moistetud-andrus-varnik-tuli-napsisena-kohtusaali",
@@ -198,7 +198,7 @@ namespace TumeKaust.Services
                     "ja 2. aprillist 2007 kuni 23. novembrini 2016 Riigikogu aseesimees.",
                     News = new() { "Uudis 1: Suur korruptsioon on Keskerakonna kirstunael. Esiteks, Jüri Ratase tuumväide on olnud, et tema Keskerakond on hoopis midagi muud, kui Savisaare oma. Ja et kõik jamad, mis erakonna rahastamisega ilmnevad, on karma, hoop selga minevikust.",
                                    "Uudis 2: Prokuratuur kahtlustab Simsoni eukaaslast, ettevõtte HKScan eksjuhti Teet Soormi omastamises ja rahapesus.\r\n\r\nPostimees kirjutas, et Linnamäe Peekoni juhid võisid pöörata poliitilise siseinfo rahaks, kui mullu sügisel võtsid jõudluskontrollis arvele 584 emist." ,
-                                   "Uudis 3: Postimees kirjutab sellest, et peaminister Jüri Ratas olevat esmaspäeva hommikul kohtumisel EKRE poliitikutega nõudnud minister Marti Kuusiku kandidatuuri tagasivõtmist, “kuna levivad kuuldused…”. ERR-ile antud intervjuus ütleb peaminister paraku, et sellist ettepanekut ta ei teinud.\r\n\r\nMarti Kuusiku pihta suunatud loo allosas aga on selgelt öeldud: “Postimees võttis eelmisel nädalal ühendust väidetava ohvriga, kes ütles, et see info ei vasta tõele. «See väide on absurdne. Marti Kuusik on väga hea isa, me saame väga hästi läbi ja ta sobib ministriks suurepäraselt. Toetan teda täielikult,» kommenteeris ta.”", 
+                                   "Uudis 3: Postimees kirjutab sellest, et peaminister Jüri Ratas olevat esmaspäeva hommikul kohtumisel EKRE poliitikutega nõudnud minister Marti Kuusiku kandidatuuri tagasivõtmist, “kuna levivad kuuldused…”. ERR-ile antud intervjuus ütleb peaminister paraku, et sellist ettepanekut ta ei teinud.\r\n\r\nMarti Kuusiku pihta suunatud loo allosas aga on selgelt öeldud: “Postimees võttis eelmisel nädalal ühendust väidetava ohvriga, kes ütles, et see info ei vasta tõele. «See väide on absurdne. Marti Kuusik on väga hea isa, me saame väga hästi läbi ja ta sobib ministriks suurepäraselt. Toetan teda täielikult,» kommenteeris ta.”",
                     },
                     NewsLinks = new() {
                             "https://ekspress.delfi.ee/artikkel/92251051/juri-ratas-paastis-tagasi-astudes-oma-poliitikunahka",
@@ -220,12 +220,12 @@ namespace TumeKaust.Services
                     "(umbusaldamise poolt hääletas 63 Riigikogu liiget, vaja oli 51 häält).",
                     News = new() { "Uudis 1: Reformierakondlasest endine peaminister Taavi Rõivas näib olevat krooniline maniakk, kes nii poliitikuna kui ka abielumehena pidevalt amoraalselt avalikkuse ees käitub.\r\n\r\nKülmkapi-Taavina meelde jäänud endise esiorava viimane perversne skandaal rullus lahti läinud aasta sügisel, kui ta koos kellegi Brigitte Susanne Hundiga Lillepaviljoni peldikusse suundus ja end sinna kümneks minutiks lukustanud. See, et kohal oli ka Rõivase abikaasa Luisa, teda muidugi ei morjendanud.",
                                    "Uudis 2: Ühel hetkel läksid eemale, sosistasid ja sahistasid, käsi tagumiku peal,» väidab neljapäeva õhtul TV3 sügispeol viibinud isik. Olgugi et Taavi Rõivas oli peole saabunud koos abikaasaga, veetis ta intiimselt aega nii Brigitte Susanne Hundi kui Desiree Mummiga." ,
-                                   "Uudis 3: ",
-                    },              
+                                   "Uudis 3: Reformierakondlane Taavi Rõivas avaldas tänu kõikidele inimestele, kes on teda ja teisi Reformierakonna kandidaate valinud.\r\n\r\nRõivas sõnas, et viimaste päevade skandaal on talle õpetanud, et tal on maailma kõige parem naine, vahendab Postimees. Kas skandaal ka vaibub, sõltub tema sõnul meediast. \r\n\r\nKeskerakonna võit on Rõivase sõnul midagi, millega kõik on ära harjunud, kuid ta avaldas ühtlasi lootust, et Reformierakonna tulemus on selline, mis võimaldab muutust Tallinnas. \r\n\r\n«Praegu veel on positiivne lootus õhus, et Tallinnas on võimalik positiivseid muutusi ellu kutsuda,» sõnas ta.\r\n\r\n",
+                    },
                     NewsLinks = new() {
                                 "https://uueduudised.ee/eesti-endine-reformierakondlasest-peaminister-ja-tema-piinlikud-skandaalid/",
                                 "https://elu24.postimees.ee/7860541/ekspeaminister-taavi-roivas-ja-bsh-vupsasid-koos-wc-kabiini-luisa-jai-kurva-naoga-korvalt-vaatama",
-                                ""
+                                "https://elu24.postimees.ee/4277499/taavi-roivas-skandaal-opetas-et-mul-on-maailma-koige-parem-naine"
                    }
                 },
 
@@ -243,7 +243,7 @@ namespace TumeKaust.Services
                     "ja julgeolekupoliitika kõrge esindaja ja Euroopa Komisjoni asepresident. " +
                     "Kallas on Eesti esimene naispeaminister.",
                     News = new() { "Uudis 1: Venemaa siseministeeriumi tagaotsitavate andmebaasis on ilmunud Eesti peaministri Kaja Kallase ja riigisekretär Taimar Peterkopi nimed. Kuigi andmebaasis ei ole välja toodud, millise paragrahvi alusel Kallast ja Peterkopi tagaotsitakse, tekitab see siiski rahvusvahelist tähelepanu. Varasemalt andis Venemaa uurimiskomitee esimees Aleksandr Bastrõkin korralduse kontrollida Eesti võimude tegevust seoses tankimonumendi eemaldamisega Narvas.",
-                                   "Uudis 2: Politoloog Tõnis Leht asetab Kaja Kallase samale skaalale president Lennart Meri ja Toomas Hendrik Ilvesega. „Ta on neist isegi kraadi võrra nähtavam, kuuldavam ja mõjukam olnud,“ märgib Leht.\r\n\r\nEile andis Kaja Kallas president Alar Karisele üle tagasiastumisavalduse. Täna tegi president peaministrikandidaat Kristen Michalile ettepaneku moodustada uus valitsus.\r\n\r\nSee tähendab, et Eesti ühe välispoliitiliselt enim silma paistnud peaministri kolme ja poole aastane ametiaeg on läbi saanud. Sellesse aega on mahtunud nii koroonaaeg, energiakriis ja Venemaa täiemahuline sõda Ukraina vastu kui ka riigisisesed skandaalid ja tülid.\r\nOled juba tellija?\r\nMis on Delfi Kogupakett?\r\nTellijana saad lugeda ka neid artikleid:\r\nSotsid tahavad homme alustada Tallinna võimukõnelusi, Isamaa keeldub kohtumisel osalemast\r\nSotsid tahavad homme alustada Tallinna võimukõnelusi, Isamaa keeldub kohtumisel osalemast (288)\r\nTapa vallavalitsuse liige ja sotsiaalosakonna juht veab samal ajal edukat sotsiaalteenuste MTÜ-d. Politsei asus uurima võimalikku korruptsiooni\r\nTapa vallavalitsuse liige ja sotsiaalosakonna juht veab samal ajal edukat sotsiaalteenuste MTÜ-d. Politsei asus uurima võimalikku korruptsiooni (118)\r\nKairi Kuusemaa võib vanglast enne tähtaja lõppu vabaneda\r\nKairi Kuusemaa võib vanglast enne tähtaja lõppu vabaneda (122)\r\nSamal teemal\r\n15.07.2024\r\nFOTOD JA VIDEO | Kaja Kallas andis presidendile üle tagasiastumisavalduse (775)\r\n16.07.2024\r\nFOTOD | President Karis näitas Michalile rohelist tuld valitsuse moodustamiseks (322)\r\nKommenteeri Loe kommentaare (526)\r\n\r\n" ,
+                                   "Uudis 2: Politoloog Tõnis Leht asetab Kaja Kallase samale skaalale president Lennart Meri ja Toomas Hendrik Ilvesega. „Ta on neist isegi kraadi võrra nähtavam, kuuldavam ja mõjukam olnud,“ märgib Leht.\r\n\r\nEile andis Kaja Kallas president Alar Karisele üle tagasiastumisavalduse. Täna tegi president peaministrikandidaat Kristen Michalile ettepaneku moodustada uus valitsus.\r\n\r\nSee tähendab, et Eesti ühe välispoliitiliselt enim silma paistnud peaministri kolme ja poole aastane ametiaeg on läbi saanud. Sellesse aega on mahtunud nii koroonaaeg, energiakriis ja Venemaa täiemahuline sõda Ukraina vastu kui ka riigisisesed skandaalid ja tülid.\r\nOled juba tellija?\r\nMis on Delfi Kogupakett?\r\nTellijana saad lugeda ka neid artikleid:\r\nSotsid tahavad homme alustada Tallinna võimukõnelusi, Isamaa keeldub kohtumisel osalemast\r\nSotsid tahavad homme alustada Tallinna võimukõnelusi, Isamaa keeldub kohtumisel osalemast (288)\r\nTapa vallavalitsuse liige ja sotsiaalosakonna juht veab samal ajal edukat sotsiaalteenuste MTÜ-d. Politsei asus uurima võimalikku korruptsiooni\r\nTapa vallavalitsuse liige ja sotsiaalosakonna juht veab samal ajal edukat sotsiaalteenuste MTÜ-d. Politsei asus uurima võimalikku korruptsiooni (118)\r\nKairi Kuusemaa võib vanglast enne tähtaja lõppu vabaneda\r\nKairi Kuusemaa võib vanglast enne tähtaja lõppu vabaneda (122)\r\nSamal teemal\r\n15.07.2024\r\nFOTOD JA VIDEO | Kaja Kallas andis presidendile üle tagasiastumisavalduse." ,
                                    "Uudis 3: Euroopa Parlamendi saadik Jaak Madison (EKRE) kirjutab sotsiaalmeedias, et Kaja Kallas on puhkenud skandaali kontekstis käitunud valelikult, silmakirjalikult ja kahepalgeliselt, nõudes kõikidelt ettevõtjatelt Venemaa suunas äritegevuse lõpetamist, samal ajal kui tema abikaasa teenib mõnusat tulu Venemaa ärist. Ühtlasi kutsub ta rahvast meeleavaldusele Eesti mainet kahjustanud peaministri vastu.",
                     },  
                     NewsLinks = new() {
@@ -254,6 +254,7 @@ namespace TumeKaust.Services
                 },
 
         };
+
         public static Person GetPersonDetails(string name)
         {
             return people.FirstOrDefault(p => p.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
