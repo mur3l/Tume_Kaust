@@ -103,7 +103,7 @@
 
         <!-- Back Button -->
         <Button Grid.Row="3"
-                Text="TAGASINUPP"
+                Text="TAGASI"
                 BackgroundColor="#6a329f"
                 TextColor="#ffd710"
                 FontSize="16"

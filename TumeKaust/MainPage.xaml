@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:TumeKaust.Models"
              xmlns:viewmodels="clr-namespace:TumeKaust.ViewModels"
-             x:Class="TumeKaust.MainPage">
+             x:Class="TumeKaust.MainPage"
+             BackgroundColor="#181818">
 
     <!-- ViewModel binding -->
     <ContentPage.BindingContext>
@@ -23,11 +24,11 @@
                 <Label Text="Tere Tulemast Tumedasse Kausta!"
                        HorizontalOptions="Center"
                        FontSize="40"
-                       TextColor="White"/>
+                       TextColor="#ffd710"/>
                 <Label Text="Kaust, kus ise olla ei tahaks"
                        HorizontalOptions="Center"
                        FontSize="20"
-                       TextColor="#ccc"/>
+                       TextColor="#ffd710"/>
                 <SearchBar Placeholder="Otsi midagi..." />
             </VerticalStackLayout>
 
@@ -44,19 +45,20 @@
 
                 <!-- Poliitikud -->
                 <Frame Grid.Row="0" Grid.Column="0"
-           CornerRadius="15"
-           BackgroundColor="#222"
-           HasShadow="True"
-           Padding="10">
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Image Source="poliitikud.png"
-                   WidthRequest="100"
-                   HeightRequest="100"
-                   Aspect="AspectFit"/>
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
                         <Label Text="Poliitikud"
-                   TextColor="White"
-                   FontSize="16"
-                   HorizontalOptions="Center"/>
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
                     </VerticalStackLayout>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnPoliitikudTapped"/>
@@ -65,19 +67,20 @@
 
                 <!-- Sportlased -->
                 <Frame Grid.Row="0" Grid.Column="1"
-           CornerRadius="15"
-           BackgroundColor="#222"
-           HasShadow="True"
-           Padding="10">
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Image Source="sportlased.png"
-                   WidthRequest="100"
-                   HeightRequest="100"
-                   Aspect="AspectFit"/>
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
                         <Label Text="Sportlased"
-                   TextColor="White"
-                   FontSize="16"
-                   HorizontalOptions="Center"/>
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
                     </VerticalStackLayout>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnSportlasedTapped"/>
@@ -86,19 +89,20 @@
 
                 <!-- Presidendid -->
                 <Frame Grid.Row="1" Grid.Column="0"
-           CornerRadius="15"
-           BackgroundColor="#222"
-           HasShadow="True"
-           Padding="10">
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Image Source="presidendid.png"
-                   WidthRequest="100"
-                   HeightRequest="100"
-                   Aspect="AspectFit"/>
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
                         <Label Text="Presidendid"
-                   TextColor="White"
-                   FontSize="16"
-                   HorizontalOptions="Center"/>
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
                     </VerticalStackLayout>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnPresidendidTapped"/>
@@ -107,19 +111,20 @@
 
                 <!-- Suunamudijad -->
                 <Frame Grid.Row="1" Grid.Column="1"
-           CornerRadius="15"
-           BackgroundColor="#222"
-           HasShadow="True"
-           Padding="10">
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
                     <VerticalStackLayout HorizontalOptions="Center">
                         <Image Source="suunamudijad.png"
-                   WidthRequest="100"
-                   HeightRequest="100"
-                   Aspect="AspectFit"/>
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
                         <Label Text="Suunamudijad"
-                   TextColor="White"
-                   FontSize="16"
-                   HorizontalOptions="Center"/>
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
                     </VerticalStackLayout>
                     <Frame.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnSuunamudijadTapped"/>
@@ -129,8 +134,8 @@
             </Grid>
 
             <Button Text="Kõik kategooriad"
-                    BackgroundColor="#444"
-                    TextColor="White"
+                    BackgroundColor="#181818"
+                    TextColor="#ffd710"
                     FontSize="18"
                     CornerRadius="10"
                     HeightRequest="40"
@@ -143,7 +148,7 @@
             <Label Text="Värskeimad Patustajad"
                    HorizontalOptions="Center"
                    FontSize="20"
-                   TextColor="White"/>
+                   TextColor="#ffd710"/>
 
             <!-- 4️. Alumine 1x3 hiljuti uuendatud isikute grid horisontaalselt -->
             <CollectionView ItemsSource="{Binding RecentPeople}"
@@ -162,7 +167,7 @@
                         <Frame CornerRadius="15"
                                HasShadow="True"
                                Padding="10"
-                               BackgroundColor="#333"
+                               BackgroundColor="#181818"
                                WidthRequest="120"
                                HeightRequest="150"
                                Margin="5">
@@ -173,7 +178,7 @@
                                        Aspect="AspectFill"
                                        Margin="0,0,0,5"/>
                                 <Label Text="{Binding Name}"
-                                       TextColor="White"
+                                       TextColor="#ffd710"
                                        FontSize="16"
                                        HorizontalOptions="Center"/>
                             </VerticalStackLayout>

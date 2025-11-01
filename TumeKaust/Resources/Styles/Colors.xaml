@@ -9,6 +9,6 @@
     <Color x:Key="Background">#181818</Color>
     <Color x:Key="Text">#ffd710</Color>
     <Color x:Key="ButtonBackground">#6a329f</Color>
-    <Color x:Key="Border">#DFD8F7</Color>
+    <Color x:Key="Border">#2C2C2C</Color>
 
 </ResourceDictionary>

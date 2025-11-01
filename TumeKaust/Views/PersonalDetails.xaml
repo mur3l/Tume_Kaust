@@ -136,14 +136,15 @@
 
                 <!-- Nupp -->
                 <Button Grid.Column="1"
-                        Text="Back"
+                        Text="TAGASI"
                         Style="{StaticResource ButtonStyle}"
                         HorizontalOptions="End"
                         VerticalOptions="Center"
                         WidthRequest="80"
                         HeightRequest="35"
                         CornerRadius="8"
-                        FontSize="14"
+                        FontSize="16"
+                        FontAttributes="Bold"
                         Clicked="OnBackButtonClicked"/>
             </Grid>
         </VerticalStackLayout>
