@@ -128,6 +128,17 @@
 
             </Grid>
 
+            <Button Text="Kõik kategooriad"
+                    BackgroundColor="#444"
+                    TextColor="White"
+                    FontSize="18"
+                    CornerRadius="10"
+                    HeightRequest="40"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,20"
+                    Clicked="OnAllCategoriesClicked"/>
+
+
             <!-- 3️. Pealkiri alumise gridi kohal -->
             <Label Text="Värskeimad Patustajad"
                    HorizontalOptions="Center"

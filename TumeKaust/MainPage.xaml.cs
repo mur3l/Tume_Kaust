@@ -101,5 +101,11 @@ namespace TumeKaust
             await Navigation.PushAsync(new SuunamudijadPage());
         }
 
+        private async void OnAllCategoriesClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Categories());
+        }
+
+
     }
 }
