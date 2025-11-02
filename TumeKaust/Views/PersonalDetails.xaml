@@ -29,89 +29,80 @@
                    HorizontalOptions="Center"/>
 
             <!-- Lühitutvustus -->
-            <VerticalStackLayout Spacing="10">
+            <VerticalStackLayout Spacing="15"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 WidthRequest="340">
                 <Label Text="Lühidalt, kes on?"
                        FontSize="18"
                        FontAttributes="Bold"
-                       TextColor="{StaticResource Text}"
-                       HorizontalOptions="Start"/>
+                       TextColor="#ffd710"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"/>
+
                 <Label Text="{Binding Description}"
-                       FontSize="14"
-                       TextColor="{StaticResource Text}"
+                       FontSize="15"
+                       LineHeight="1.4"
+                       TextColor="#ffd710"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
                        LineBreakMode="WordWrap"/>
             </VerticalStackLayout>
 
             <!-- Uudised -->
             <Label Text="Uudised"
-                   FontSize="16"
+                   FontSize="18"
                    FontAttributes="Bold"
-                   TextColor="{StaticResource Text}"
-                   Margin="0,10,0,0"
-                   HorizontalTextAlignment="Center"/>
-
+                   TextColor="#ffd710"
+                   HorizontalTextAlignment="Center"
+                   Margin="0,10,0,0"/>
 
             <CollectionView x:Name="NewsCollectionView"
-                ItemsSource="{Binding News}"
-                ItemsLayout="VerticalList"
-                SelectionMode="None"
-                HeightRequest="300">
+                            ItemsSource="{Binding News}"
+                            ItemsLayout="VerticalList"
+                            SelectionMode="None">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <VerticalStackLayout Padding="0,5">
+                        <VerticalStackLayout Padding="0,10">
 
-                            <!-- Näita uudise teksti -->
+                            <!-- Uudise tekst -->
                             <Label Text="{Binding .}"
-                                   FontSize="14"
+                                   FontSize="14.5"
                                    TextColor="{StaticResource Text}"
-                                   LineBreakMode="WordWrap" />
+                                   HorizontalTextAlignment="Center"
+                                   LineBreakMode="WordWrap"
+                                   Margin="15,0"/>
 
-                            <!-- Loe edasi BUTTON -->
+                            <!-- Loe edasi nupp (keskel) -->
                             <Button Text="Loe edasi"
-                                    Style="{StaticResource ButtonStyle}"
-                                    WidthRequest="150"
-                                    HeightRequest="35"
+                                    BackgroundColor="#6a329f"
+                                    TextColor="#ffd710"
+                                    FontSize="14"
                                     FontAttributes="Bold"
-                                    Clicked="OnNewsTapped"
-                                    CommandParameter="{Binding .}">
-                                <!--Kui viia kursorit peale, läheb siniseks nii öelda aktiivseks--><!--
+                                    CornerRadius="8"
+                                    HorizontalOptions="Center"
+                                    WidthRequest="130"
+                                    HeightRequest="35"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="OnNewsTapped">
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="CommonStates">
                                         <VisualState x:Name="Normal">
                                             <VisualState.Setters>
-                                                <Setter Property="TextColor" Value="Gray" />
+                                                <Setter Property="BackgroundColor" Value="#6a329f"/>
+                                                <Setter Property="TextColor" Value="#ffd710"/>
                                             </VisualState.Setters>
                                         </VisualState>
                                         <VisualState x:Name="PointerOver">
                                             <VisualState.Setters>
-                                                <Setter Property="TextColor" Value="CornflowerBlue" />
+                                                <Setter Property="BackgroundColor" Value="#8c4bdc"/>
+                                                <Setter Property="TextColor" Value="White"/>
                                             </VisualState.Setters>
                                         </VisualState>
-                                    </VisualStateGroup>
-                                </VisualStateManager.VisualStateGroups>
-                            </Button>-->
-                                <VisualStateManager.VisualStateGroups>
-                                    <VisualStateGroup x:Name="CommonStates">
-                                        <!-- Tava olek -->
-                                        <VisualState x:Name="Normal">
-                                            <VisualState.Setters>
-                                                <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackground}" />
-                                                <Setter Property="TextColor" Value="{StaticResource ButtonText}" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-
-                                        <!-- Kursor peal -->
-                                        <VisualState x:Name="PointerOver">
-                                            <VisualState.Setters>
-                                                <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
-                                                <Setter Property="TextColor" Value="White" />
-                                            </VisualState.Setters>
-                                        </VisualState>
-
-                                        <!-- Vajutades -->
                                         <VisualState x:Name="Pressed">
                                             <VisualState.Setters>
-                                                <Setter Property="BackgroundColor" Value="{StaticResource AccentDark}" />
-                                                <Setter Property="TextColor" Value="White" />
+                                                <Setter Property="BackgroundColor" Value="#57267d"/>
+                                                <Setter Property="TextColor" Value="White"/>
                                             </VisualState.Setters>
                                         </VisualState>
                                     </VisualStateGroup>
@@ -121,7 +112,7 @@
                             <!-- Peenike joon uudiste vahel -->
                             <BoxView HeightRequest="1" 
                                      Color="{StaticResource Border}" 
-                                     Margin="0,5"/>
+                                     Margin="0,10,0,10"/>
                         </VerticalStackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
