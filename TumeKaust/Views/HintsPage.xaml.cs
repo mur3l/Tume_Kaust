@@ -20,5 +20,14 @@ namespace TumeKaust.Views
             else
                 await DisplayAlert("Teade", "Vihjeid pole veel saadetud.", "OK");
         }
+
+        private async void OnBackClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
+        }
+
+
     }
+
+
 }

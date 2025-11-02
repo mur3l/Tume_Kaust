@@ -42,14 +42,15 @@
                        HeightRequest="45"
                        WidthRequest="250"
                        Margin="0,0,0,0"
-                       FontSize="16"/>
+                       FontSize="18"/>
                 <Button Text="Saada"
                         BackgroundColor="#6a329f"
                         TextColor="#ffd710"
                         Clicked="OnSendHintClicked"
                         HeightRequest="45"
                         WidthRequest="70"
-                        CornerRadius="10" />
+                        CornerRadius="10"
+                        FontSize="18"/>
             </HorizontalStackLayout>
             
             <!--Koik vihjed nupp-->
@@ -61,6 +62,7 @@
                         HeightRequest="45"
                         WidthRequest="300"
                         CornerRadius="10"
+                        FontSize="18"
                         Clicked="OnViewHintsClicked"/>
             </VerticalStackLayout>
 
