@@ -3,9 +3,9 @@ using TumeKaust.Services;
 
 namespace TumeKaust.Views
 {
-    public partial class PresidendidPage : ContentPage
+    public partial class SportlasedPage : ContentPage
     {
-        public PresidendidPage()
+        public SportlasedPage()
         {
             InitializeComponent();
         }
@@ -28,7 +28,6 @@ namespace TumeKaust.Views
                 }
             }
         }
-
         private async void OnBackClicked(object sender, EventArgs e)
         {
             await Navigation.PopAsync();

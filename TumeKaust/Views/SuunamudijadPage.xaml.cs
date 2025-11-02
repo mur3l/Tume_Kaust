@@ -3,9 +3,9 @@ using TumeKaust.Services;
 
 namespace TumeKaust.Views
 {
-    public partial class PresidendidPage : ContentPage
+    public partial class SuunamudijadPage : ContentPage
     {
-        public PresidendidPage()
+        public SuunamudijadPage()
         {
             InitializeComponent();
         }

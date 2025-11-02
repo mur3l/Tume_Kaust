@@ -67,10 +67,10 @@
 
                             <!-- Loe edasi BUTTON -->
                             <Button Text="Loe edasi"
-                                    Style="{StaticResource LinkButtonStyle}"
+                                    Style="{StaticResource ButtonStyle}"
                                     Clicked="OnNewsTapped"
                                     CommandParameter="{Binding .}">
-                                <!--Kui viia kursorit peale, läheb siniseks nii öelda aktiivseks-->
+                                <!--Kui viia kursorit peale, läheb siniseks nii öelda aktiivseks--><!--
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="CommonStates">
                                         <VisualState x:Name="Normal">
@@ -81,6 +81,34 @@
                                         <VisualState x:Name="PointerOver">
                                             <VisualState.Setters>
                                                 <Setter Property="TextColor" Value="CornflowerBlue" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+                                    </VisualStateGroup>
+                                </VisualStateManager.VisualStateGroups>
+                            </Button>-->
+                                <VisualStateManager.VisualStateGroups>
+                                    <VisualStateGroup x:Name="CommonStates">
+                                        <!-- Tava olek -->
+                                        <VisualState x:Name="Normal">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="{StaticResource ButtonBackground}" />
+                                                <Setter Property="TextColor" Value="{StaticResource ButtonText}" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                        <!-- Kursor peal -->
+                                        <VisualState x:Name="PointerOver">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="{StaticResource Accent}" />
+                                                <Setter Property="TextColor" Value="White" />
+                                            </VisualState.Setters>
+                                        </VisualState>
+
+                                        <!-- Vajutades -->
+                                        <VisualState x:Name="Pressed">
+                                            <VisualState.Setters>
+                                                <Setter Property="BackgroundColor" Value="{StaticResource AccentDark}" />
+                                                <Setter Property="TextColor" Value="White" />
                                             </VisualState.Setters>
                                         </VisualState>
                                     </VisualStateGroup>
@@ -108,14 +136,15 @@
 
                 <!-- Nupp -->
                 <Button Grid.Column="1"
-                        Text="Back"
+                        Text="TAGASI"
                         Style="{StaticResource ButtonStyle}"
                         HorizontalOptions="End"
                         VerticalOptions="Center"
                         WidthRequest="80"
                         HeightRequest="35"
                         CornerRadius="8"
-                        FontSize="14"
+                        FontSize="16"
+                        FontAttributes="Bold"
                         Clicked="OnBackButtonClicked"/>
             </Grid>
         </VerticalStackLayout>

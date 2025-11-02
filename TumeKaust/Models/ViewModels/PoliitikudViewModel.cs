@@ -4,13 +4,13 @@ using TumeKaust.Services;
 
 namespace TumeKaust.ViewModels
 {
-    public class PresidendidViewModel
+    public class PoliitikudViewModel
     {
         public ObservableCollection<Person> Persons { get; set; }
 
-        public PresidendidViewModel()
+        public PoliitikudViewModel()
         {
-            Persons = new ObservableCollection<Person>(PersonsServices.GetPresidendid());
+            Persons = new ObservableCollection<Person>(PersonsServices.GetPoliitikud());
         }
     }
 }

@@ -3,9 +3,9 @@ using TumeKaust.Services;
 
 namespace TumeKaust.Views
 {
-    public partial class PresidendidPage : ContentPage
+    public partial class PoliitikudPage : ContentPage
     {
-        public PresidendidPage()
+        public PoliitikudPage()
         {
             InitializeComponent();
         }
@@ -23,7 +23,7 @@ namespace TumeKaust.Views
                 }
 
                 else
-                {
+                { 
                     await DisplayAlert("Viga", "Isiku andmeid ei leitud.", "OK");
                 }
             }

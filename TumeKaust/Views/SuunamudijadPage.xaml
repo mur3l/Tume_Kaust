@@ -3,12 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:TumeKaust.Models"
              xmlns:viewmodels="clr-namespace:TumeKaust.ViewModels"
-             x:Class="TumeKaust.Views.PresidendidPage"
-             Title="Presidendid"
+             x:Class="TumeKaust.Views.SuunamudijadPage"
+             Title="Suunamudijad"
              BackgroundColor="#181818">
 
     <ContentPage.BindingContext>
-        <viewmodels:PresidendidViewModel />
+        <viewmodels:SuunamudijadViewModel />
     </ContentPage.BindingContext>
 
     <Grid>
@@ -38,7 +38,7 @@
                Padding="20,10" 
                Margin="0,0,0,10"
                HasShadow="False">
-            <Label Text="Presidendid" 
+            <Label Text="Suunamudijad" 
                    FontSize="20" 
                    FontAttributes="Bold" 
                    TextColor="#ffd710" 
@@ -56,9 +56,13 @@
                            BackgroundColor="#181818" 
                            CornerRadius="10"
                            HasShadow="True">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenPersonCommand}"
+                                                  CommandParameter="{Binding .}" />
+                        </Frame.GestureRecognizers>
                         <Grid ColumnDefinitions="100,*" 
                               VerticalOptions="Center">
-
+                            
                             <!-- Image -->
                             <Image Source="{Binding ImagePath}"
                                    Aspect="AspectFill"
@@ -79,20 +83,19 @@
                                        FontSize="14"
                                        TextColor="#ffd710"
                                        LineBreakMode="WordWrap" />
-
                             <!-- Nupp mis viib isiku Details lehele -->
-                                <Button Text="Loe lähemalt"
-                                BackgroundColor="#6a329f"
-                                TextColor="#ffd710"
-                                FontSize="16"
-                                FontAttributes="Bold"
-                                CornerRadius="8"
-                                HeightRequest="30"
-                                WidthRequest="200"
-                                HorizontalOptions="Start"
-                                CommandParameter="{Binding .}"
-                                Clicked="OnDetailsClicked" />
-
+                            <Button Text="Loe lähemalt"
+                                    BackgroundColor="#6a329f"
+                                    TextColor="#ffd710"
+                                    FontSize="16"
+                                    FontAttributes="Bold"
+                                    CornerRadius="8"
+                                    HeightRequest="30"
+                                    WidthRequest="200"
+                                    HorizontalOptions="Start"
+                                    CommandParameter="{Binding .}"
+                                    Clicked="OnDetailsClicked" />
+                                
                             </VerticalStackLayout>
                         </Grid>
                     </Frame>

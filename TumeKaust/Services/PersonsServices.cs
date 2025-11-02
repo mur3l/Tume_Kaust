@@ -9,7 +9,7 @@ namespace TumeKaust.Services
 {
     public static class PersonsServices
     {
-        private static List<Person> GetPersons()
+        public static List<Person> GetPersons()
         { 
           return new List<Person>
           {
@@ -52,7 +52,7 @@ namespace TumeKaust.Services
               new Person
               { 
                 ImagePath = "mallukas.png",
-                Name = "Mariann Treimann",
+                Name = "Mariann Treimann tuntud kui Mallukas",
                 Description = "Eesti ettevõtja, moelooja ja sotsiaalmeediategelane.",
                 Category = "Suunamudijad",
                 DetailsKey = "Mallukas"
@@ -78,11 +78,10 @@ namespace TumeKaust.Services
 
               new Person
               {
-                ImagePath = "vips.png",
-                Name = "Jüri Vips",
-                Description = "Eesti autosportlane, kes on võistelnud vormelisarjades, sealhulgas Formula 2-s ja Red Bulli noorteprogrammis.",
-                Category = "Sportlased",
-                DetailsKey = "JüriVips"
+                ImagePath = "mirkko.png",
+                Name = "Mirkko Moisar",
+                Description = "Eesti kikkpoksija.",
+                Category = "Sportlased"
               },
 
               new Person
@@ -122,6 +121,31 @@ namespace TumeKaust.Services
               },
 
           };
+        }
+
+        public static List<Person> GetPersonsByCategory(string category)
+        {
+            return GetPersons().Where(p => p.Category == category).ToList();
+        }
+
+        public static List<Person> GetPresidendid()
+        {
+            return GetPersonsByCategory("Presidendid");
+        }
+
+        public static List<Person> GetPoliitikud()
+        {
+            return GetPersonsByCategory("Poliitikud");
+        }
+
+        public static List<Person> GetSuunamudijad()
+        {
+            return GetPersonsByCategory("Suunamudijad");
+        }
+
+        public static List<Person> GetSportlased()
+        {
+            return GetPersonsByCategory("Sportlased");
         }
     }
 }

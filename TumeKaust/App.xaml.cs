@@ -23,7 +23,7 @@ namespace TumeKaust
         public App()
         {
             InitializeComponent();
-            MainPage = new Views.PresidendidPage();
+            MainPage = new NavigationPage(new AppShell());
         }
     }
 }

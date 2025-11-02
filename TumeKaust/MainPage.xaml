@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:TumeKaust.Models"
              xmlns:viewmodels="clr-namespace:TumeKaust.ViewModels"
-             x:Class="TumeKaust.MainPage">
+             x:Class="TumeKaust.MainPage"
+             BackgroundColor="#181818">
 
     <!-- ViewModel binding -->
     <ContentPage.BindingContext>
@@ -23,61 +24,139 @@
                 <Label Text="Tere Tulemast Tumedasse Kausta!"
                        HorizontalOptions="Center"
                        FontSize="40"
-                       TextColor="White"/>
+                       TextColor="#ffd710"/>
                 <Label Text="Kaust, kus ise olla ei tahaks"
                        HorizontalOptions="Center"
                        FontSize="20"
-                       TextColor="#ccc"/>
+                       TextColor="#ffd710"/>
                 <SearchBar Placeholder="Otsi midagi..." />
             </VerticalStackLayout>
 
-            <!-- 2️. Keskmine 2x2 kategooriate grid -->
-            <CollectionView ItemsSource="{Binding Categories}"
-                            SelectionMode="Single"
-                            SelectionChanged="OnCategorySelected"
-                            VerticalScrollBarVisibility="Never"
-                            HeightRequest="350">
+            <!-- Keskmine 2x2 kategooriate grid -->
+            <Grid ColumnSpacing="10" RowSpacing="10"
+                HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150"/>
+                    <RowDefinition Height="150"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="150"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
 
-                <CollectionView.ItemsLayout>
-                    <GridItemsLayout Orientation="Vertical"
-                                     Span="2"
-                                     VerticalItemSpacing="10"
-                                     HorizontalItemSpacing="10"/>
-                </CollectionView.ItemsLayout>
+                <!-- Poliitikud -->
+                <Frame Grid.Row="0" Grid.Column="0"
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="poliitikudmain.jpg"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
+                        <Label Text="Poliitikud"
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPoliitikudTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
 
-                <CollectionView.ItemTemplate>
-                    <DataTemplate x:DataType="models:MainPageCategoryGrid">
-                        <Frame CornerRadius="15"
-                               HasShadow="True"
-                               Padding="10"
-                               BackgroundColor="#222"
-                               Margin="5">
-                            <VerticalStackLayout HorizontalOptions="Center">
-                                <Image Source="{Binding Image}"
-                                       WidthRequest="100"
-                                       HeightRequest="100"
-                                       Aspect="AspectFit"/>
-                                <Label Text="{Binding Name}"
-                                       TextColor="White"
-                                       FontSize="16"
-                                       HorizontalOptions="Center"/>
-                            </VerticalStackLayout>
-                        </Frame>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
+                <!-- Sportlased -->
+                <Frame Grid.Row="0" Grid.Column="1"
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="sportlasedmain.jpg"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
+                        <Label Text="Sportlased"
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSportlasedTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Presidendid -->
+                <Frame Grid.Row="1" Grid.Column="0"
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="presidendidmain.jpg"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
+                        <Label Text="Presidendid"
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnPresidendidTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+                <!-- Suunamudijad -->
+                <Frame Grid.Row="1" Grid.Column="1"
+                       CornerRadius="15"
+                       BackgroundColor="#181818"
+                       BorderColor="{StaticResource Border}"
+                       HasShadow="True"
+                       Padding="10">
+                    <VerticalStackLayout HorizontalOptions="Center">
+                        <Image Source="suunamudijadmain.jpg"
+                               WidthRequest="100"
+                               HeightRequest="100"
+                               Aspect="AspectFit"/>
+                        <Label Text="Suunamudijad"
+                               TextColor="#ffd710"
+                               FontSize="16"
+                               HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnSuunamudijadTapped"/>
+                    </Frame.GestureRecognizers>
+                </Frame>
+
+            </Grid>
+
+            <Button Text="Kõik kategooriad"
+                    BackgroundColor="#181818"
+                    TextColor="#ffd710"
+                    FontSize="18"
+                    CornerRadius="10"
+                    HeightRequest="40"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,20"
+                    Clicked="OnAllCategoriesClicked"/>
+
 
             <!-- 3️. Pealkiri alumise gridi kohal -->
             <Label Text="Värskeimad Patustajad"
                    HorizontalOptions="Center"
                    FontSize="20"
-                   TextColor="White"/>
+                   TextColor="#ffd710"/>
 
             <!-- 4️. Alumine 1x3 hiljuti uuendatud isikute grid horisontaalselt -->
             <CollectionView ItemsSource="{Binding RecentPeople}"
                             SelectionMode="Single"
                             SelectionChanged="OnRecentSelected"
                             HeightRequest="150"
+                            HorizontalOptions="Center"
                             HorizontalScrollBarVisibility="Never">
 
                 <CollectionView.ItemsLayout>
@@ -90,7 +169,7 @@
                         <Frame CornerRadius="15"
                                HasShadow="True"
                                Padding="10"
-                               BackgroundColor="#333"
+                               BackgroundColor="#181818"
                                WidthRequest="120"
                                HeightRequest="150"
                                Margin="5">
@@ -101,7 +180,7 @@
                                        Aspect="AspectFill"
                                        Margin="0,0,0,5"/>
                                 <Label Text="{Binding Name}"
-                                       TextColor="White"
+                                       TextColor="#ffd710"
                                        FontSize="16"
                                        HorizontalOptions="Center"/>
                             </VerticalStackLayout>
