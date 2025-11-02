@@ -87,8 +87,8 @@
                                         FontSize="16"
                                         FontAttributes="Bold"
                                         CornerRadius="8"
-                                        HeightRequest="30"
-                                        WidthRequest="200"
+                                        HeightRequest="35"
+                                        WidthRequest="150"
                                         HorizontalOptions="Start"
                                         CommandParameter="{Binding .}"
                                         Clicked="OnDetailsClicked" />

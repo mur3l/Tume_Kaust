@@ -135,13 +135,13 @@
             </Grid>
 
             <Button Text="Kõik kategooriad"
-                    BackgroundColor="#181818"
-                    TextColor="#ffd710"
-                    FontSize="18"
-                    CornerRadius="10"
-                    HeightRequest="40"
-                    HorizontalOptions="Center"
-                    Margin="0,10,0,20"
+                    Style="{StaticResource ButtonStyle}"
+                    VerticalOptions="Center"
+                    WidthRequest="175"
+                    HeightRequest="35"
+                    CornerRadius="8"
+                    FontSize="16"
+                    FontAttributes="Bold"
                     Clicked="OnAllCategoriesClicked"/>
 
 
