@@ -29,17 +29,17 @@
                        HorizontalOptions="Center"
                        FontSize="20"
                        TextColor="#ffd710"/>
-                <SearchBar Placeholder="Otsi midagi..." />
             </VerticalStackLayout>
 
             <HorizontalStackLayout Spacing="10">
                 <Entry x:Name="HintEntry"
-                       Placeholder="Kirjuta oma vihje..."
+                       Placeholder="Saada meile vihje!"
                        HorizontalOptions="FillAndExpand"
                        BackgroundColor="#333"
                        TextColor="White"
                        PlaceholderColor="#aaa"
                        HeightRequest="45"
+                       WidthRequest="300"
                        Margin="0,10,0,0"
                        FontSize="16" />
                 <Button Text="Saada"
@@ -49,6 +49,11 @@
                         HeightRequest="45"
                         WidthRequest="100"
                         CornerRadius="10" />
+                <Button Text="Vaata saadetud vihjeid"
+                        BackgroundColor="#444"
+                        TextColor="White"
+                        Margin="0,10,0,20"
+                        Clicked="OnViewHintsClicked"/>      
             </HorizontalStackLayout>
 
             <!-- Keskmine 2x2 kategooriate grid -->
@@ -188,7 +193,7 @@
                         <Frame CornerRadius="15"
                                HasShadow="True"
                                Padding="10"
-                               BackgroundColor="#ffffff"
+                               BackgroundColor="#181818"
                                WidthRequest="120"
                                HeightRequest="150"
                                Margin="5"

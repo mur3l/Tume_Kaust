@@ -123,6 +123,12 @@ namespace TumeKaust
             await DisplayAlert("Aitäh!", "Sinu vihje salvestati edukalt.", "OK");
         }
 
+        private async void OnViewHintsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HintsPage());
+        }
+
+
 
     }
 }
