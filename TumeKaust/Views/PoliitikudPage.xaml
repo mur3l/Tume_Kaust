@@ -46,42 +46,45 @@
         </Frame>
 
         <!-- Content List -->
-        <CollectionView Grid.Row="2" 
-                        ItemsSource="{Binding Persons}"
-                        SelectionMode="Single"
-                        Margin="20,0">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Person">
-                    <Frame Margin="0,5" 
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto, *">
+            <CollectionView Grid.Column="1"
+                            ItemsSource="{Binding Persons}"
+                            SelectionMode="Single"
+                            WidthRequest="420"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Start">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Person">
+                        <Frame Margin="0,5" 
                            Padding="15" 
                            BackgroundColor="#181818" 
                            CornerRadius="10"
                            HasShadow="True">
-                        <Grid ColumnDefinitions="100,*" 
+                            <Grid ColumnDefinitions="100,*" 
                               VerticalOptions="Center">
 
-                            <!-- Image -->
-                            <Image Source="{Binding ImagePath}"
+                                <!-- Image -->
+                                <Image Source="{Binding ImagePath}"
                                    Aspect="AspectFill"
                                    WidthRequest="80"
                                    HeightRequest="80"
                                    Grid.Column="0"
                                    Margin="0,0,15,0" />
 
-                            <!-- Text Description -->
-                            <VerticalStackLayout Grid.Column="1"
+                                <!-- Text Description -->
+                                <VerticalStackLayout Grid.Column="1"
                                                  VerticalOptions="Center">
-                                <Label Text="{Binding Name}"
+                                    <Label Text="{Binding Name}"
                                        FontSize="18"
                                        FontAttributes="Bold"
                                        TextColor="#ffd710" />
-                                <Label Text="{Binding Description}"
+                                    <Label Text="{Binding Description}"
                                        FontSize="14"
                                        TextColor="#ffd710"
                                        LineBreakMode="WordWrap" />
 
-                                <!-- Nupp mis viib isiku Details lehele -->
-                                <Button Text="Loe lähemalt"
+                                    <!-- Nupp mis viib isiku Details lehele -->
+                                    <Button Text="Loe lähemalt"
                                         BackgroundColor="#6a329f"
                                         TextColor="#ffd710"
                                         FontSize="16"
@@ -93,12 +96,13 @@
                                         CommandParameter="{Binding .}"
                                         Clicked="OnDetailsClicked" />
 
-                            </VerticalStackLayout>
-                        </Grid>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
 
         <Grid Grid.Row="3" 
               ColumnDefinitions="*,Auto"

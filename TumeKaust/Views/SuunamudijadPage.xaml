@@ -46,62 +46,63 @@
         </Frame>
 
         <!-- Content List -->
-        <CollectionView Grid.Row="2" 
-                        ItemsSource="{Binding Persons}"
-                        Margin="20,0">
-            <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="models:Person">
-                    <Frame Margin="0,5" 
-                           Padding="15" 
-                           BackgroundColor="#181818" 
-                           CornerRadius="10"
-                           HasShadow="True">
-                        <Frame.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type ContentPage}}, Path=BindingContext.OpenPersonCommand}"
-                                                  CommandParameter="{Binding .}" />
-                        </Frame.GestureRecognizers>
-                        <Grid ColumnDefinitions="100,*" 
-                              VerticalOptions="Center">
-                            
-                            <!-- Image -->
-                            <Image Source="{Binding ImagePath}"
-                                   Aspect="AspectFill"
-                                   WidthRequest="80"
-                                   HeightRequest="80"
-                                   Grid.Column="0"
-                                   Margin="0,0,15,0"
-                                   HorizontalOptions="Start" />
+        <Grid Grid.Row="2" ColumnDefinitions="*, Auto, *">
+            <CollectionView Grid.Column="1"
+                    ItemsSource="{Binding Persons}"
+                    SelectionMode="Single"
+                    WidthRequest="420"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Person">
+                        <Frame Margin="0,5" 
+                   Padding="15" 
+                   BackgroundColor="#181818" 
+                   CornerRadius="10"
+                   HasShadow="True">
+                            <Grid ColumnDefinitions="100,*" 
+                      VerticalOptions="Center">
 
-                            <!-- Text Description -->
-                            <VerticalStackLayout Grid.Column="1"
-                                                 VerticalOptions="Center">
-                                <Label Text="{Binding Name}"
-                                       FontSize="18"
-                                       FontAttributes="Bold"
-                                       TextColor="#ffd710" />
-                                <Label Text="{Binding Description}"
-                                       FontSize="14"
-                                       TextColor="#ffd710"
-                                       LineBreakMode="WordWrap" />
-                            <!-- Nupp mis viib isiku Details lehele -->
-                            <Button Text="Loe lähemalt"
-                                    BackgroundColor="#6a329f"
-                                    TextColor="#ffd710"
-                                    FontSize="16"
-                                    FontAttributes="Bold"
-                                    CornerRadius="8"
-                                    HeightRequest="35"
-                                    WidthRequest="150"
-                                    HorizontalOptions="Start"
-                                    CommandParameter="{Binding .}"
-                                    Clicked="OnDetailsClicked" />
-                                
-                            </VerticalStackLayout>
-                        </Grid>
-                    </Frame>
-                </DataTemplate>
-            </CollectionView.ItemTemplate>
-        </CollectionView>
+                                <!-- Image -->
+                                <Image Source="{Binding ImagePath}"
+                           Aspect="AspectFill"
+                           WidthRequest="80"
+                           HeightRequest="80"
+                           Grid.Column="0"
+                           Margin="0,0,15,0" />
+
+                                <!-- Text Description -->
+                                <VerticalStackLayout Grid.Column="1"
+                                         VerticalOptions="Center">
+                                    <Label Text="{Binding Name}"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#ffd710" />
+                                    <Label Text="{Binding Description}"
+                               FontSize="14"
+                               TextColor="#ffd710"
+                               LineBreakMode="WordWrap" />
+
+                                    <!-- Nupp mis viib isiku Details lehele -->
+                                    <Button Text="Loe lähemalt"
+                                BackgroundColor="#6a329f"
+                                TextColor="#ffd710"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                HeightRequest="35"
+                                WidthRequest="150"
+                                HorizontalOptions="Start"
+                                CommandParameter="{Binding .}"
+                                Clicked="OnDetailsClicked" />
+
+                                </VerticalStackLayout>
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
 
         <Grid Grid.Row="3" 
               ColumnDefinitions="*,Auto"
