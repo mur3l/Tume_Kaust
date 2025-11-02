@@ -122,7 +122,6 @@
             <Button Grid.Column="1"
                     Text="TAGASI"
                     BackgroundColor="#6a329f"
-                    TextColor="#ffd710"
                     Style="{StaticResource ButtonStyle}"
                     VerticalOptions="Center"
                     HorizontalOptions="End"

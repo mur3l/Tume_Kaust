@@ -68,6 +68,9 @@
                             <!-- Loe edasi BUTTON -->
                             <Button Text="Loe edasi"
                                     Style="{StaticResource ButtonStyle}"
+                                    WidthRequest="150"
+                                    HeightRequest="35"
+                                    FontAttributes="Bold"
                                     Clicked="OnNewsTapped"
                                     CommandParameter="{Binding .}">
                                 <!--Kui viia kursorit peale, läheb siniseks nii öelda aktiivseks--><!--
