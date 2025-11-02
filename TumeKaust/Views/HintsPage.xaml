@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TumeKaust.Views.HintsPage"
+             Title="Vihjed"
+             BackgroundColor="#111">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+
+            <!-- Pealkiri -->
+            <Label Text="Kasutajate saadetud vihjed"
+                   FontSize="24"
+                   TextColor="White"
+                   HorizontalOptions="Center" />
+
+            <!-- Vihjete list -->
+            <CollectionView x:Name="HintsCollection"
+                            VerticalOptions="FillAndExpand"
+                            SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BackgroundColor="#222"
+                               CornerRadius="10"
+                               Padding="10"
+                               Margin="0,5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Text}"
+                                       TextColor="White"
+                                       FontSize="18"
+                                       LineBreakMode="WordWrap" />
+                                <Label Text="{Binding Date, StringFormat='Saadetud: {0:dd.MM.yyyy HH:mm}'}"
+                                       TextColor="#aaa"
+                                       FontSize="12" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <!-- Tagasi nupp -->
+            <Button Text="Tagasi"
+                    Clicked="OnBackClicked"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    CornerRadius="10"
+                    BackgroundColor="#6a329f"
+                    TextColor="#ffd710"
+                    Margin="0,10,0,0"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -106,6 +106,29 @@ namespace TumeKaust
             await Navigation.PushAsync(new Categories());
         }
 
+        private async void OnSendHintClicked(object sender, EventArgs e)
+        {
+            string text = HintEntry.Text?.Trim();
+
+            if (string.IsNullOrEmpty(text))
+            {
+                await DisplayAlert("Tühjus", "Palun kirjuta midagi enne saatmist.", "OK");
+                return;
+            }
+
+            var hint = new Hint { Text = text };
+            await App.HintDatabase.SaveHintAsync(hint);
+
+            HintEntry.Text = string.Empty;
+            await DisplayAlert("Aitäh!", "Sinu vihje salvestati edukalt.", "OK");
+        }
+
+        private async void OnViewHintsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Views.HintsPage());
+        }
+
+
 
     }
 }
