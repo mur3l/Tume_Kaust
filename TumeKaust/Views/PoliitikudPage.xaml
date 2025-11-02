@@ -86,7 +86,7 @@
                                     <!-- Nupp mis viib isiku Details lehele -->
                                     <Button Text="Loe lähemalt"
                                         BackgroundColor="#6a329f"
-                                        TextColor="#ffd710"
+                                        Style="{StaticResource ButtonStyle}"
                                         FontSize="16"
                                         FontAttributes="Bold"
                                         CornerRadius="8"
