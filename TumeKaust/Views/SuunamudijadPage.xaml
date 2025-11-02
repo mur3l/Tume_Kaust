@@ -103,17 +103,33 @@
             </CollectionView.ItemTemplate>
         </CollectionView>
 
-        <!-- Back Button -->
-        <Button Grid.Row="3"
-                Text="TAGASI"
-                BackgroundColor="#6a329f"
-                TextColor="#ffd710"
-                VerticalOptions="Center"
-                WidthRequest="80"
-                HeightRequest="35"
-                CornerRadius="8"
-                FontSize="16"
-                FontAttributes="Bold"
-                Clicked="OnBackClicked" />
+        <Grid Grid.Row="3" 
+              ColumnDefinitions="*,Auto"
+              Padding="20,0"
+              Margin="0,10,0,10">
+
+            <!-- Privacy -->
+            <Label Grid.Column="0"
+                   Text="Privacy"
+                   FontSize="12"
+                   TextColor="Gray"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start" />
+
+            <!-- Back Button -->
+            <Button Grid.Column="1"
+                    Text="TAGASI"
+                    BackgroundColor="#6a329f"
+                    TextColor="#ffd710"
+                    Style="{StaticResource ButtonStyle}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End"
+                    WidthRequest="80"
+                    HeightRequest="35"
+                    CornerRadius="8"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Clicked="OnBackClicked" />
+        </Grid>
     </Grid>
 </ContentPage>
