@@ -74,17 +74,19 @@
                                    Margin="15,0"/>
 
                             <!-- Loe edasi nupp (keskel) -->
-                            <Button Text="Loe edasi"
-                                    BackgroundColor="#6a329f"
-                                    TextColor="#ffd710"
-                                    FontSize="14"
-                                    FontAttributes="Bold"
-                                    CornerRadius="8"
-                                    HorizontalOptions="Center"
-                                    WidthRequest="130"
-                                    HeightRequest="35"
-                                    CommandParameter="{Binding .}"
-                                    Clicked="OnNewsTapped">
+                           <Button Text="Loe edasi"
+                                   Style="{StaticResource ButtonStyle}"
+                                   BackgroundColor="#6a329f"
+                                   TextColor="#ffd710"
+                                   BorderWidth="2"
+                                   FontSize="14"
+                                   FontAttributes="Bold"
+                                   CornerRadius="8"
+                                   HorizontalOptions="Center"
+                                   WidthRequest="130"
+                                   HeightRequest="35"
+                                   CommandParameter="{Binding .}"
+                                   Clicked="OnNewsTapped">
                                 <VisualStateManager.VisualStateGroups>
                                     <VisualStateGroup x:Name="CommonStates">
                                         <VisualState x:Name="Normal">

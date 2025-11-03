@@ -44,8 +44,10 @@
                        Margin="0,0,0,0"
                        FontSize="18"/>
                 <Button Text="Saada"
+                        Style="{StaticResource ButtonStyle}"
                         BackgroundColor="#6a329f"
                         TextColor="#ffd710"
+                        BorderWidth="2"
                         Clicked="OnSendHintClicked"
                         HeightRequest="45"
                         WidthRequest="90"
@@ -58,8 +60,10 @@
             <!--Koik vihjed nupp-->
             <VerticalStackLayout>
                 <Button Text="Vaata kõiki vihjeid siit!"
+                        Style="{StaticResource ButtonStyle}"
                         BackgroundColor="#6a329f"
                         TextColor="#ffd710"
+                        BorderWidth="2"
                         Margin="0,0,0,0"
                         HeightRequest="45"
                         WidthRequest="300"
@@ -180,6 +184,7 @@
                     FontAttributes="Bold"
                     BackgroundColor="#6a329f"
                     TextColor="#ffd710"
+                    BorderWidth="2"
                     HorizontalOptions="Center"
                     Margin="0,10,0,20"
                     Clicked="OnAllCategoriesClicked"/>
