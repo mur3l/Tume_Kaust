@@ -39,13 +39,18 @@
             </CollectionView>
 
             <!-- Tagasi nupp -->
-            <Button Text="Tagasi"
+            <Button Text="TAGASI"
                     Clicked="OnBackClicked"
+                    BackgroundColor="#6a329f"
+                    Style="{StaticResource ButtonStyle}"
                     HorizontalOptions="Center"
                     VerticalOptions="Center"
-                    CornerRadius="10"
-                    BackgroundColor="#6a329f"
-                    TextColor="#ffd710"
+                    WidthRequest="100"
+                    HeightRequest="35"
+                    CornerRadius="8"
+                    FontSize="16"
+                    FontAttributes="Bold"
+                    Padding="10,0"
                     Margin="0,10,0,0"/>
 
         </VerticalStackLayout>

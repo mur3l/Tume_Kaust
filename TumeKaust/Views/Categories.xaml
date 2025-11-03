@@ -26,50 +26,62 @@
                 
             <Button 
                 Text="Poliitikud"
-                BackgroundColor="#6a329f"
                 Style="{StaticResource ButtonStyle}"
                 FontSize="16"
+                WidthRequest="150"
                 FontAttributes="Bold"
+                BorderWidth="2"
                 CornerRadius="8"
-                HeightRequest="30"
-                WidthRequest="200"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                Padding="10,15"
+                Margin="0,5"
                 Clicked="OnPoliitikudClicked" />
                 
             <Button 
                 Text="Sportlased"
-                BackgroundColor="#6a329f"
                 Style="{StaticResource ButtonStyle}"
                 FontSize="16"
+                WidthRequest="150"
                 FontAttributes="Bold"
+                BorderWidth="2"
                 CornerRadius="8"
-                HeightRequest="30"
-                WidthRequest="200"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                Padding="10,15"
+                Margin="0,5"
                 Clicked="OnSportlasedClicked" />
                 
             <Button 
                 Text="Suunamudijad"
-                BackgroundColor="#6a329f"
                 Style="{StaticResource ButtonStyle}"
                 FontSize="16"
                 FontAttributes="Bold"
+                WidthRequest="150"
+                BorderWidth="2"
                 CornerRadius="8"
-                HeightRequest="30"
-                WidthRequest="200"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                Padding="10,15"
+                Margin="0,5"
                 Clicked="OnSuunamudijadClicked" />
                 
             <Button 
                 Text="Presidendid"
-                BackgroundColor="#6a329f"
                 Style="{StaticResource ButtonStyle}"
                 FontSize="16"
                 FontAttributes="Bold"
+                WidthRequest="150"
+                BorderWidth="2"
                 CornerRadius="8"
-                HeightRequest="30"
-                WidthRequest="200"
+                HeightRequest="60"
+                HorizontalOptions="FillAndExpand"
+                Padding="10,15"
+                Margin="0,5"
                 Clicked="OnPresidendidClicked" />
         </VerticalStackLayout>
 
-        <Grid   Grid.Row="3" 
+        <Grid   Grid.Row="2" 
                 ColumnDefinitions="*,Auto"
                 Padding="20,0"
                 Margin="0,10,0,10">
@@ -89,7 +101,7 @@
                     Style="{StaticResource ButtonStyle}"
                     VerticalOptions="Center"
                     HorizontalOptions="End"
-                    WidthRequest="80"
+                    WidthRequest="100"
                     HeightRequest="35"
                     CornerRadius="8"
                     FontSize="16"
