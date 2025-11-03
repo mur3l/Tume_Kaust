@@ -20,7 +20,7 @@ namespace TumeKaust
             }
         }
 
-        // ✅ Lisa teise andmebaasi jaoks eraldi property teise nimega
+        // Vihjete DB
         private static HintDatabase _hintDatabase;
         public static HintDatabase HintDatabase
         {
