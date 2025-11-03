@@ -101,7 +101,7 @@
                     Style="{StaticResource ButtonStyle}"
                     VerticalOptions="Center"
                     HorizontalOptions="End"
-                    WidthRequest="80"
+                    WidthRequest="100"
                     HeightRequest="35"
                     CornerRadius="8"
                     FontSize="16"
